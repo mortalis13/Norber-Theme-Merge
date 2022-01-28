@@ -1,0 +1,14 @@
+{
+    "name": "Norber Widgets",
+    "globals":
+    {
+        "foreground": "#ffe76a",
+        "background": "#222",
+        "caret": "#f8f000",
+        "selection": "#000",
+        "selection_border": "#3ec8e0",
+        "inactive_selection": "#222",
+        "inactive_selection_border": "#3ec8e0",
+        "rulers": "#ddd",
+    },
+}
