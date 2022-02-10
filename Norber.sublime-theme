@@ -88,29 +88,70 @@
         "diverged_icon_bg": "var(orange)",
         "diverged_icon_fg": "color(var(diverged_bg) l(- 30%) s(- 10%))",
         
-        // Output status icon
-        "output_fg": "var(text)",
-        "output_succeeded_fg": "var(green)",
-        "output_failed_fg": "var(darker_red)",
-        "output_running_fg": "var(blue)",
-        "output_cancelled_fg": "var(text)",
-
-		// Scroll shadow
-		"scroll_shadow": "color(black a(0.3))",
-
-		// Focus highlight
-		"focus_highlight_color": "var(text)",
-        
         // Overlays
         "overlay_bg": "var(header_bg)",
+        
+        // Tabs
+        "tab_bar_bg": "#505050",
+        "file_tab_bg": "var(tab_bar_bg)",
+        "file_tab_hover_bg": "#666",
+        "untracked_file_tab_bg": "var(untracked_header_bg)",
+        "unmerged_file_tab_bg": "var(unmerged_header_bg)",
+        "location_tab_bg": "var(detail_panel_bg)",
+        "tab_button_fg": "var(text-heading)",
+        "tab_separator_bg": "#fff",
+        
+        "file_badge_modified_bg": "#feff90",
+        "file_badge_unmerged_bg": "var(unmerged_header_bg)",
+        "repository_tab_bar_bg": "hsl(210, 10%, 30%)",
+        "repository_tab_hover_bg": "hsl(210, 12%, 38%)",
+        "repository_tab_bar_border_bg": "var(medium_gray-light)",
 
-		// Welcome overlay
-		"welcome_bg": "color(var(dark_gray) l(- 3%))",
-		"recent_repositories_row_bg-hover": "var(dark_gray-light)",
+        "file_badge_modified_fg": "#222",
+        "file_badge_unmerged_fg": "#2e1d07",
+        "file_badge_untracked_bg": "var(detail_panel_bg)",
+        "file_badge_untracked_fg": "var(medium_gray-dark)",
+        "file_badge_staged_bg": "#ccffba",
+        "file_badge_staged_fg": "#222",
+        
+        // Buttons
+        "split_button_line": "var(background)",
+        
+        "button_bg": "hsl(214, 10%, 40%)",
+        "button_fg": "var(label_color)",
+        "button_shadow": "transparent",
 
-		// Preferences Page
-		"preferences_overlay_bg": "#333",
-		"preferences_section_table_bg": "#333",
+        "highlighted_button_light_bg": "color(hsl(84, 35%, 50%))",
+        "highlighted_button_light_fg": "var(label_color)",
+        "highlighted_button_dark_bg": "color(hsl(83, 40%, 44%))",
+        "highlighted_button_dark_fg": "var(label_color)",
+        "highlighted_button_shadow": "color(black a(0.5) l(+ 10%))",
+
+        "toggle_button_bg": "#3B4248", // This matches the header hover buttons
+        "toggle_button_fg": "var(text)",
+        "toggle_button_fg_selected": "var(text-heading)",
+        "toggle_button_bg-details": "#586067", // This matches the buttons in the details panel
+
+        // Hazard buttons
+        "hazard_button_bg": "var(red)",
+        "hazard_button_fg": "white",
+        "hazard_button_shadow": "color(black a(0.5))",
+        
+        // Use hunk buttons
+        "use_hunk_button_fg": "var(foreground)",
+        
+        // Radio buttons
+        "radio_back": "var(background)",
+        "radio_selected": "var(blue)",
+        "radio_border-unselected": "#a6a6a6",
+        "radio_border-selected": "var(blue)",
+
+        // Checkbox buttons
+        "checkbox_border-unselected": "#a6a6a6",
+        "checkbox-disabled": "#a6a6a6",
+        "checkbox_back": "var(background)",
+        "checkbox_selected": "var(blue)",
+        "checkbox_border-selected": "var(blue)",
         
         // Location bar
         "submodule_stat_bg": "var(orange)",
@@ -146,12 +187,6 @@
 		"table_of_contents_heading_fg": "var(text-heading)",
 		"table_of_contents_row_bg": "var(medium_gray)",
 
-		// Detail panel
-		"detail_panel_bg": "var(background)",
-		"field_name_fg": "var(text)",
-		"author_fg": "#bbb",
-		"terminator_fg": "var(medium_gray)",
-        
 		// Annotations
 		"commit_annotation_fg": "#adf",
 		"commit_annotation_fg_inverted": "color(black)",
@@ -189,7 +224,13 @@
 		"deleted_ann_bg": "color(var(dark_red) s(- 10%))",
 
         "submodule_light_ann_fg": "color(var(text) a(0.5))",
-
+        
+		// Detail panel
+		"detail_panel_bg": "var(background)",
+		"field_name_fg": "var(text)",
+		"author_fg": "#bbb",
+		"terminator_fg": "var(medium_gray)",
+        
 		// Diff headers
 		"file_diff_shadow": "color(black a(0.5))",
 		"file_icon_bg": "color(white a(0.2))",
@@ -227,6 +268,21 @@
 
 		"full_context_icon_bg": "var(medium_gray-light)",
 
+		// Quick panel
+		"quick_panel_bg": "var(dark_gray-light)",
+		"quick_panel_row_bg": "var(dark_gray)",
+		"quick_panel_fg": "var(text)",
+		"quick_panel_fg-match": "var(text-heading)",
+		"quick_panel_fg-selected": "var(text)",
+		"quick_panel_fg-selected-match": "var(text-heading)",
+		"quick_panel_path_fg": "var(text)",
+		"quick_panel_path_fg-match": "var(text-heading)",
+		"quick_panel_path_fg-selected": "var(text)",
+		"quick_panel_path_fg-selected-match": "var(text-heading)",
+
+		// Command Palette
+		"preview_fg": "white",
+        
 		// File Diffs
 		"onion_skin_slider_puck_bg": "color(var(medium_gray) l(+ 5%))",
 		"onion_skin_slider_puck_border_bg": "var(medium_gray-dark)",
@@ -242,55 +298,6 @@
 		// Blame
 		"blame_popup_bg": "color(var(background) l(+ 10%))",
 
-		// Buttons
-        "split_button_line": "var(background)",
-        
-		"button_bg": "hsl(214, 10%, 40%)",
-		"button_fg": "var(label_color)",
-		"button_shadow": "transparent",
-
-		"highlighted_button_light_bg": "color(hsl(84, 35%, 50%))",
-		"highlighted_button_light_fg": "var(label_color)",
-		"highlighted_button_dark_bg": "color(hsl(83, 40%, 44%))",
-		"highlighted_button_dark_fg": "var(label_color)",
-		"highlighted_button_shadow": "color(black a(0.5) l(+ 10%))",
-
-		"toggle_button_bg": "#3B4248", // This matches the header hover buttons
-		"toggle_button_fg": "var(text)",
-		"toggle_button_fg_selected": "var(text-heading)",
-		"toggle_button_bg-details": "#586067", // This matches the buttons in the details panel
-
-		// Tabs
-		"tab_bar_bg": "#505050",
-        "file_tab_bg": "var(tab_bar_bg)",
-        "file_tab_hover_bg": "#666",
-        "untracked_file_tab_bg": "var(untracked_header_bg)",
-        "unmerged_file_tab_bg": "var(unmerged_header_bg)",
-        "location_tab_bg": "var(detail_panel_bg)",
-        "tab_button_fg": "var(text-heading)",
-		"tab_separator_bg": "#fff",
-        
-        // Hazard buttons
-        "hazard_button_bg": "var(red)",
-        "hazard_button_fg": "white",
-        "hazard_button_shadow": "color(black a(0.5))",
-        
-        // Use hunk buttons
-        "use_hunk_button_fg": "var(foreground)",
-
-		// Radio buttons
-		"radio_back": "var(background)",
-		"radio_selected": "var(blue)",
-        "radio_border-unselected": "#a6a6a6",
-		"radio_border-selected": "var(blue)",
-
-		// Checkbox buttons
-        "checkbox_border-unselected": "#a6a6a6",
-        "checkbox-disabled": "#a6a6a6",
-		"checkbox_back": "var(background)",
-		"checkbox_selected": "var(blue)",
-		"checkbox_border-selected": "var(blue)",
-
 		// Dialogs
 		"dialog_bg": "var(dark_gray-light)",
 		"dialog_button_bg": "var(medium_gray)",
@@ -298,18 +305,6 @@
 		// Progress bar
 		"progress_bg": "color(var(dark_gray-lightest) l(+ 3%))",
 		"progress_fg": "color(var(medium_gray) a(0.5))",
-
-		// Quick panel
-		"quick_panel_bg": "var(dark_gray-light)",
-		"quick_panel_row_bg": "var(dark_gray)",
-		"quick_panel_fg": "var(text)",
-		"quick_panel_fg-match": "var(text-heading)",
-		"quick_panel_fg-selected": "var(text)",
-		"quick_panel_fg-selected-match": "var(text-heading)",
-		"quick_panel_path_fg": "var(text)",
-		"quick_panel_path_fg-match": "var(text-heading)",
-		"quick_panel_path_fg-selected": "var(text)",
-		"quick_panel_path_fg-selected-match": "var(text-heading)",
 
 		// Switch repository window
 		"switch_repo_bg": "var(dark_gray-light)",
@@ -337,26 +332,30 @@
 		"loading_ball_1": "var(medium_gray)",
 		"loading_ball_2": "var(blue)",
 
-		// Command Palette
-		"preview_fg": "white",
-
 		// Merge Helper
 		"merge_helper_highlight_bg": "color(var(dark_gray-lightest) l(25%))",
 		"console_border": "color(var(dark_gray-lightest) l(20%))",
+        
+        // Output status icon
+        "output_fg": "var(text)",
+        "output_succeeded_fg": "var(green)",
+        "output_failed_fg": "var(darker_red)",
+        "output_running_fg": "var(blue)",
+        "output_cancelled_fg": "var(text)",
 
-		// Tabs
-        "file_badge_modified_bg": "#feff90",
-        "file_badge_unmerged_bg": "var(unmerged_header_bg)",
-        "repository_tab_bar_bg": "hsl(210, 10%, 30%)",
-		"repository_tab_hover_bg": "hsl(210, 12%, 38%)",
-		"repository_tab_bar_border_bg": "var(medium_gray-light)",
+        // Scroll shadow
+        "scroll_shadow": "color(black a(0.3))",
 
-		"file_badge_modified_fg": "#222",
-		"file_badge_unmerged_fg": "#2e1d07",
-		"file_badge_untracked_bg": "var(detail_panel_bg)",
-		"file_badge_untracked_fg": "var(medium_gray-dark)",
-		"file_badge_staged_bg": "#ccffba",
-		"file_badge_staged_fg": "#222",
+        // Focus highlight
+        "focus_highlight_color": "var(text)",
+
+        // Welcome overlay
+        "welcome_bg": "color(var(dark_gray) l(- 3%))",
+        "recent_repositories_row_bg-hover": "var(dark_gray-light)",
+
+        // Preferences Page
+        "preferences_overlay_bg": "#333",
+        "preferences_section_table_bg": "#333",
 	},
 	"rules":
 	[
