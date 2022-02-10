@@ -1,14 +1,6 @@
 {
 	"variables":
 	{   
-        // Style guide:
-        //  - Grays: use hex format
-        //    e.g. #333, #e0e0e0
-        //  - Other colors: use hsl() to make hue evident
-        //    e.g. hsl(210, 50%, 100%)
-        //  - Related colors: use color() function to
-        //    modify alpha, hue, saturation or lightness
-        
         // Color palette
         "background": "#222",
         "diff_scheme_background": "#1a191d",
@@ -66,68 +58,24 @@
 
 		// Header
 		"title_bar_style": "light",
-		"header_bg": "color(var(dark_gray-medium))",
+		"header_bg": "var(background)",
 		"header_fg": "var(text-heading)",
-		"header_button_bg": "color(var(medium_gray) a(0.5))",
+        "header_button_bg": "hsl(210, 12%, 32%)",
+		"header_button_hover_bg": "hsl(210, 16%, 42%)",
 		"icon_button_fg": "#fff",
         
-        "icon_button_opacity":
-        {
-            "target": 0.8,
-            "speed": 1.0,
-            "interpolation": "smoothstep"
-        },
-        "icon_button_opacity-hidden":
-        {
-            "target": 0.0,
-            "speed": 1.0,
-            "interpolation": "smoothstep"
-        },
-        "icon_button_opacity-faded":
-        {
-            "target": 0.5,
-            "speed": 1.0,
-            "interpolation": "smoothstep"
-        },
-        "icon_button_opacity-hover":
-        {
-            "target": 1,
-            "speed": 1.0,
-            "interpolation": "smoothstep"
-        },
-        "icon_button_opacity-panel":
-        {
-            "target": 0.7,
-            "speed": 1.0,
-            "interpolation": "smoothstep"
-        },
-        "icon_button_opacity-panel-hover":
-        {
-            "target": 0.7,
-            "speed": 1.0,
-            "interpolation": "smoothstep"
-        },
+        "icon_button_opacity": {"target": 0.8, "speed": 1.0, "interpolation": "smoothstep"},
+        "icon_button_opacity-hidden": {"target": 0.0, "speed": 1.0, "interpolation": "smoothstep"},
+        "icon_button_opacity-faded": {"target": 0.5, "speed": 1.0, "interpolation": "smoothstep"},
+        "icon_button_opacity-hover": {"target": 1, "speed": 1.0, "interpolation": "smoothstep"},
+        "icon_button_opacity-panel": {"target": 0.7, "speed": 1.0, "interpolation": "smoothstep"},
+        "icon_button_opacity-panel-hover": {"target": 0.7, "speed": 1.0, "interpolation": "smoothstep"},
         
         "hidden_slash": "var(orange)",
         
-		"icon_button_opacity-tab_bar":
-		{
-			"target": 0.7,
-			"speed": 1.0,
-			"interpolation": "smoothstep"
-		},
-		"icon_button_opacity-tab_bar-faded":
-		{
-			"target": 0.4,
-			"speed": 1.0,
-			"interpolation": "smoothstep"
-		},
-		"icon_button_opacity-tab_bar-hover":
-		{
-			"target": 1,
-			"speed": 1.0,
-			"interpolation": "smoothstep"
-		},
+		"icon_button_opacity-tab_bar": {"target": 0.7, "speed": 1.0, "interpolation": "smoothstep"},
+		"icon_button_opacity-tab_bar-faded": {"target": 0.4, "speed": 1.0, "interpolation": "smoothstep"},
+		"icon_button_opacity-tab_bar-hover": {"target": 1, "speed": 1.0, "interpolation": "smoothstep"},
 
 		"info_shadow": "color(black a(0.2))",
         "info-progress_bar_bg": "#ccc",
@@ -161,8 +109,8 @@
 		"recent_repositories_row_bg-hover": "var(dark_gray-light)",
 
 		// Preferences Page
-		"preferences_overlay_bg": "var(dark_gray-medium)",
-		"preferences_section_table_bg": "var(dark_gray-lightest)",
+		"preferences_overlay_bg": "#333",
+		"preferences_section_table_bg": "#333",
         
         // Location bar
         "submodule_stat_bg": "var(orange)",
@@ -176,7 +124,7 @@
 		// Commit list
 		"commit_list_bg": [40,40,40],
         "commit_selected_row_bg": [75,75,75],
-		"commit_row_bg-hover": "#000",
+		"commit_row_bg-hover": "#111",
 		"commit_summary_fg-primary": "var(text-heading)",
 		"commit_summary_fg-secondary": "#bbb",
         "commit_color_count": 6,
@@ -190,7 +138,7 @@
 
         // Side Bar
 		"side_bar_container_bg": "var(dark_gray-light)",
-        "side_bar_container_with_graph_bg": [40,40,40],
+        "side_bar_container_with_graph_bg": "#282828",
 
 		// Table of Contents
 		"table_of_contents_bg": "var(dark_gray-medium)",
@@ -249,8 +197,8 @@
 		"hunk_button_fg": "#eee",
 		"hunk_button_shadow": "color(black a(0.5))",
 
-		"file_header_bg": "#000",
-		"file_header_bg-hover": "#21262a",
+		"file_header_bg": "var(diff_scheme_background)",
+		"file_header_bg-hover": "#2a3136",
 
 		"hunk_header_bg": "#444",
 
@@ -259,8 +207,8 @@
 		"deleted_header_bg-hover": "color(var(dark_red) l(+ 5%))",
 
 		"unmerged_icon_fg": "color(var(text) l(+ 20%))",
-		"unmerged_header_bg": "var(dark_blue)",
-		"unmerged_header_bg-hover": "color(var(dark_blue) l(+ 5%))",
+		"unmerged_header_bg": "#a45f29",
+		"unmerged_header_bg-hover": "color(var(unmerged_header_bg) l(+ 5%))",
 
 		"recent_icon_fg": "var(yellow)",
 		"recent_icon_bg": "transparent",
@@ -271,7 +219,7 @@
         "expand_all_diff_bg-hover": "color(var(expand_all_diff_bg) l(+ 5%))",
 
 		"staged_icon_fg": "var(text)",
-        "staged_header_bg": "#374032",
+        "staged_header_bg": "#31382d",
         "staged_header_bg-hover": "color(var(staged_header_bg) l(+ 5%))",
 
 		"renamed_file_inserted": "color(var(green) s(30%) l(60%))",
@@ -313,12 +261,13 @@
 		"toggle_button_bg-details": "#586067", // This matches the buttons in the details panel
 
 		// Tabs
-        "file_tab_bg": "var(file_header_bg)",
+		"tab_bar_bg": "#505050",
+        "file_tab_bg": "var(tab_bar_bg)",
+        "file_tab_hover_bg": "#666",
         "untracked_file_tab_bg": "var(untracked_header_bg)",
         "unmerged_file_tab_bg": "var(unmerged_header_bg)",
         "location_tab_bg": "var(detail_panel_bg)",
-        "tab_button_fg": "var(toggle_button_fg_selected)",
-		"tab_bar_bg": "#000",
+        "tab_button_fg": "var(text-heading)",
 		"tab_separator_bg": "#fff",
         
         // Hazard buttons
@@ -398,7 +347,8 @@
 		// Tabs
         "file_badge_modified_bg": "#feff90",
         "file_badge_unmerged_bg": "var(unmerged_header_bg)",
-		"repository_tab_bar_bg": "black",
+        "repository_tab_bar_bg": "hsl(210, 10%, 30%)",
+		"repository_tab_hover_bg": "hsl(210, 12%, 38%)",
 		"repository_tab_bar_border_bg": "var(medium_gray-light)",
 
 		"file_badge_modified_fg": "#222",
@@ -488,7 +438,7 @@
         {
             "class": "button_control",
             "attributes": ["confirm"],
-            "layer2.opacity": { "target": 0.5, "speed": 2.0, "interpolation": "smoothstep" },
+            "layer2.opacity": 0.5,
             "layer2.tint": "color(var(hazard_button_bg) l(+ 12%))",
         },
         {
@@ -499,7 +449,7 @@
         {
             "class": "button_control",
             "attributes": ["pressed", "confirm"],
-            "layer1.opacity": { "target": 1.0, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer1.opacity": 1.0,
         },
         {
             "class": "label_control",
@@ -605,33 +555,21 @@
         // File Tabs
         {
             "class": "tab",
-            "layer0.tint": "var(side_bar_container_bg)",
-            "layer0.opacity": 0.0,
-
+            "layer0.tint": "var(file_tab_bg)",
+            "layer0.opacity": 1.0,
             "layer0.inner_margin": 4,
-
             "min_size": [90, 32],
-            "content_margin": [8, 0, 8, 0],
-        },
-        {
-            "class": "tab",
-            "parents": [{"class": "side_bar_container"}],
-            "content_margin": [4, 0, 4, 0],
-        },
-        {
-            "class": "tab",
-            "parents": [{"class": "side_bar_container with_graph"}],
-            "layer0.tint": "var(side_bar_container_with_graph_bg)"
+            "content_margin": [14, 2],
         },
         {
             "class": "tab",
             "attributes": ["hover"],
-            "layer0.opacity": { "target": 0.5, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer0.tint": "var(file_tab_hover_bg)",
         },
         {
             "class": "tab",
             "attributes": ["selected"],
-            "layer0.opacity": 1.0,
+            "layer0.tint": "var(location_tab_bg)",
         },
         {
             "class": "label_control",
@@ -643,19 +581,28 @@
             "parents": [{"class": "tab", "attributes": ["selected"]}],
             "fg": "var(toggle_button_fg_selected)",
         },
-
+        
+        // Side bar tabs
         {
-            "class": "tab_separator",
-            "layer0.texture": "NorberTheme/assets/tab_separator.png",
-            "layer0.tint": "var(tab_separator_bg)",
-            "layer0.inner_margin": [0, 1],
+            "class": "tab",
+            "parents": [{"class": "side_bar_container"}],
+            "layer0.tint": "#404040",
             "layer0.opacity": 1.0,
-            "content_margin": [0, 12, 1, 12],
         },
         {
-            "class": "tab_separator_container",
+            "class": "tab",
+            "parents": [{"class": "side_bar_container"}],
+            "attributes": ["selected"],
+            "layer0.tint": "#777",
+        },
+        {
+            "class": "tab",
+            "parents": [{"class": "side_bar_container"}],
+            "attributes": ["hover", "!selected"],
+            "layer0.tint": "#606060",
         },
 
+        // File tabs
         {
             "class": "details_tab_bar",
             "layer0.tint": "var(tab_bar_bg)",
@@ -670,19 +617,15 @@
             "right_shadow_size": 8,
         },
         {
-            "class": "tab",
-            "parents": [{"class": "details_tab_bar"}],
-            "layer0.tint": "var(location_tab_bg)",
-        },
-        {
             "class": "label_control",
             "parents": [{"class": "details_tab_bar"}],
-            "fg": "color(var(tab_button_fg) a(0.8))",
+            "fg": "var(tab_button_fg)",
         },
+        
         {
             "class": "label_control",
             "parents": [{"class": "all_button"}],
-            "fg": "color(var(tab_button_fg) a(1.0))",
+            "fg": "var(tab_button_fg)",
         },
         {
             "class": "label_control",
@@ -691,8 +634,9 @@
                 {"class": "details_tab_bar"},
                 {"class": "tab", "attributes": ["selected"]},
             ],
-            "fg": "color(var(tab_button_fg) a(1.0))",
+            "fg": "var(tab_button_fg)",
         },
+        
         // Checkboxes
         {
             "class": "checkbox_box_control",
@@ -1136,6 +1080,12 @@
             "class": "button_control",
             "parents": [{"class": "header"}],
             "layer1.tint": "var(header_button_bg)",
+        },
+        {
+            "class": "button_control",
+            "parents": [{"class": "header"}],
+            "attributes": ["hover"],
+            "layer1.tint": "var(header_button_hover_bg)",
         },
         {
             "class": "button_control_right",
@@ -1743,7 +1693,7 @@
 
         {
             "class": "table_of_contents_heading_container",
-            "spacing": 8
+            "spacing": 8,
         },
         {
             "class": "table_of_contents_tree",
@@ -2583,22 +2533,6 @@
             "parents": [{"class": "expand_all_diff_control working"}],
             "layer0.tint": "var(expand_all_diff_bg-hover)"
         },
-
-        {
-            "class": "button_control all_button",
-            "layer0.texture": "NorberTheme/assets/button_outline.png",
-            "layer0.draw_center": false,
-            "layer0.tint": "var(button_bg)",
-            "layer0.inner_margin": 4,
-            "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
-            "layer1.opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep" },
-        },
-        {
-            "class": "button_control all_button",
-            "attributes": ["hover"],
-            "layer0.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
-            "layer1.opacity": { "target": 0.8, "speed": 4.0, "interpolation": "smoothstep" },
-        },
         {
             "class": "file_diff_header",
             "parents": [{"class": "expand_all_diff_control staged"}],
@@ -2619,12 +2553,6 @@
             "class": "file_diff_header",
             "attributes": ["hover"],
             "parents": [{"class": "expand_all_diff_control untracked"}],
-            "layer0.tint": "var(untracked_header_bg-hover)",
-        },
-        {
-            "class": "file_diff_header collapsible",
-            "parents": [{"class": "expand_all_diff_control untracked"}],
-            "attributes": ["hover"],
             "layer0.tint": "var(untracked_header_bg-hover)",
         },
         {
@@ -2650,6 +2578,40 @@
             "attributes": ["hover"],
             "layer0.tint": "var(untracked_header_bg-hover)",
         },
+        
+        {
+            "class": "button_control all_button",
+            "layer0.texture": "NorberTheme/assets/button_outline.png",
+            "layer0.draw_center": false,
+            "layer0.tint": "var(button_bg)",
+            "layer0.inner_margin": 4,
+            "layer0.opacity": 1,
+            "layer1.opacity": 0.4,
+        },
+        {
+            "class": "button_control all_button",
+            "attributes": ["hover"],
+            "layer1.opacity": 1,
+        },
+        {
+            "class": "button_control all_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "expand_all_diff_control working"}],
+            "layer1.tint": "var(expand_all_diff_bg)",
+        },
+        {
+            "class": "button_control all_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "expand_all_diff_control staged"}],
+            "layer1.tint": "var(staged_header_bg)",
+        },
+        {
+            "class": "button_control all_button",
+            "attributes": ["hover"],
+            "parents": [{"class": "expand_all_diff_control untracked"}],
+            "layer1.tint": "var(untracked_header_bg)",
+        },
+        
         {
             "class": "file_meta",
             "spacing": 5,
@@ -3643,7 +3605,7 @@
             "content_margin": [0, 0, 0, 0],
             "tint_index": 0,
             "tint_modifier": [255, 255, 255, 0.32],
-            "tab_height": 32,
+            "tab_height": 38,
             "tab_width": 32,
         },
         {
@@ -3653,7 +3615,7 @@
         },
         {
             "class": "tab_control",
-            "content_margin": [10, 6],
+            "content_margin": [16, 6],
             "layer1.tint": "var(repository_tab_bar_bg)",
             "layer1.opacity": 1.0,
             "layer3.tint": "var(repository_tab_bar_border_bg)",
@@ -3667,6 +3629,11 @@
             "layer1.tint": "var(header_bg)",
             "tint_modifier": [255, 255, 255, 0.0],
             "layer3.opacity": 0.0,
+        },
+        {
+            "class": "tab_control",
+            "attributes": ["hover", "!selected"],
+            "layer1.tint": "var(repository_tab_hover_bg)",
         },
         {
             "class": "tab_control",
@@ -3685,7 +3652,7 @@
         {
             "class": "icon_folder",
             "layer0.texture": "NorberTheme/assets/folder_closed.png",
-            "layer0.opacity": 0.2,
+            "layer0.opacity": 0.7,
             "layer0.tint": "var(icon_button_fg)",
             "content_margin": [9, 8]
         },
@@ -3693,11 +3660,10 @@
             "class": "icon_folder",
             "layer0.texture": "NorberTheme/assets/folder_closed.png",
             "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-            "layer0.opacity": 0.6,
         },
         {
             "class": "tab_label",
-            "fg": "color(var(label_color) a(0.9))",
+            "fg": "var(label_color)",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
         },
