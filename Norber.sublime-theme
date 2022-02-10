@@ -66,8 +66,9 @@
         "info-progress_bar_fg": "hsl(0, 0%, 53%)",
 
         "diverged_bg": "color(var(orange) l(- 5%) s(- 20%))",
-        "diverged_button_bg": "var(button_bg)",
-        "diverged_button_fg": "var(dark_gray)",
+        "diverged_button_bg": "hsla(210, 10%, 93%, 0.7)",
+        "diverged_button_hover_bg": "color(var(diverged_button_bg) l(+ 15%) a(0.9))",
+        "diverged_button_fg": "#404040",
         "diverged_button_shadow": "color(white a(0.2))",
         "diverged_icon_bg": "var(orange)",
         "diverged_icon_fg": "color(var(diverged_bg) l(- 30%) s(- 10%))",
@@ -210,7 +211,7 @@
         "submodule_light_ann_fg": "color(var(foreground) a(0.5))",
         
         // Detail panel
-        "detail_panel_bg": "var(background)",
+        "detail_panel_bg": "hsl(0, 0%, 18%)",
         "field_name_fg": "var(foreground)",
         "author_fg": "hsl(0, 0%, 73%)",
         "terminator_fg": "var(medium_gray)",
@@ -266,6 +267,9 @@
 
         // Command Palette
         "preview_fg": "white",
+        "command_history_bg": "hsl(210, 12%, 28%)",
+        "command_history_row_bg": "hsl(210, 18%, 19%)",
+        "command_history_row_hover_bg": "hsl(210, 18%, 21%)",
         
         // File Diffs
         "onion_skin_slider_puck_bg": "color(var(medium_gray) l(+ 5%))",
@@ -411,7 +415,7 @@
             "layer2.texture": "NorberTheme/assets/button.png",
             "layer2.inner_margin": 4,
             "min_size": [100, 24],
-            "content_margin": [10, 6],
+            "content_margin": [14, 6],
         },
         {
             "class": "button_control",
@@ -460,7 +464,7 @@
         {
             "class": "button_control_left",
             "layer1.texture": "NorberTheme/assets/button_left.png",
-            "min_size": [80, 25],
+            "min_size": [100, 24],
         },
         {
             "class": "button_control_right",
@@ -471,7 +475,7 @@
             "layer3.opacity": 0.35,
             "layer3.inner_margin": 4,
             "content_margin": [5, 6],
-            "min_size": [20, 20],
+            "min_size": [20, 24],
         },
 
         // Toggle buttons
@@ -991,7 +995,7 @@
             "layer1.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
             "layer2.texture": "NorberTheme/icons/icon_output_none.png",
             "layer2.tint": "var(output_fg)",
-            "layer2.opacity": { "target": 0.8, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer2.opacity": 1,
             "content_margin": [13, 8, 12, 8],
         },
         {
@@ -1395,7 +1399,17 @@
         {
             "class": "button_control",
             "parents": [{"class": "diverged_container"}],
-            "layer1.tint": "var(diverged_button_bg)",
+            "layer0.tint": "var(diverged_button_bg)",
+            "layer0.opacity": 1,
+            "layer1.opacity": 0,
+            "min_size": [90, 20],
+            "content_margin": [14, 6],
+        },
+        {
+            "class": "button_control",
+            "parents": [{"class": "diverged_container"}],
+            "attributes": ["hover"],
+            "layer0.tint": "var(diverged_button_hover_bg)",
         },
 
         // Highlighted buttons
@@ -2870,21 +2884,21 @@
         },
         {
             "class": "commit_button",
-            "min_size": [224, 25],
+            "min_size": [196, 24],
         },
         {
             "class": "split_commit_button",
             // The min_size is wider than commit_button because button_control
             // adds the margin to the min_size, where split_commit_button
             // does not have it's own margin
-            "min_size": [224, 15],
+            "min_size": [224, 24],
         },
 
         // Hunk buttons
         {
             "class": "hunk_button",
-            "min_size": [120, 30],
-            "content_margin": 0,
+            "min_size": [100, 24],
+            "content_margin": [14, 4],
         },
         {
             "class": "hunk_button",
@@ -3105,31 +3119,32 @@
         {
             "class": "command_history_container",
             "content_margin": [8, 5, 5, 5],
-            "layer0.tint": "var(commit_row_bg-hover)",
-            "layer0.opacity": 0.0,
+            "layer0.opacity": 0,
         },
         {
             "class": "command_table_container command_history",
-            "layer0.tint": "var(commit_list_bg)",
+            "layer0.tint": "var(command_history_bg)",
             "layer0.opacity": 1.0,
             "content_margin": 0,
         },
         {
             "class": "command_history_container",
+            "layer0.tint": "var(command_history_row_bg)",
             "layer0.opacity": 1.0,
             "parents": [{"class": "command_table_row", "attributes": ["selected"]}],
         },
         {
             "class": "command_history_container",
-            "layer0.opacity": 0.2,
             "parents": [{"class": "command_table_row", "attributes": ["!selected"]}],
             "attributes": ["hover"],
+            "layer0.tint": "var(command_history_row_hover_bg)",
+            "layer0.opacity": 1.0,
         },
         {
             "class": "git_output_data_container",
-            "layer0.tint": "var(background)",
+            "layer0.tint": "var(command_history_bg)",
             "layer0.opacity": 1.0,
-            "content_margin": [6, 6, 4, 6],
+            "content_margin": [6, 8, 8, 8],
         },
 
         //Command History overlay labels
