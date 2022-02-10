@@ -147,8 +147,8 @@
         "disclosure_fg": "white",
 
         // Commit list
-        "commit_list_bg": [40,40,40],
-        "commit_selected_row_bg": [75,75,75],
+        "commit_list_bg": "hsl(0, 0%, 16%)",
+        "commit_selected_row_bg": "hsl(0, 0%, 29%)",
         "commit_row_bg-hover": "hsl(0, 0%, 7%)",
         "commit_summary_fg-primary": "var(foreground)",
         "commit_summary_fg-secondary": "hsl(0, 0%, 73%)",
@@ -3433,7 +3433,7 @@
         // Auto complete
         {
             "class": "popup_control",
-            "layer0.tint": [255, 255, 255],
+            "layer0.tint": "hsl(0, 0%, 100%)",
             "layer0.opacity": 1.0
         },
         {
@@ -3441,50 +3441,50 @@
             "row_padding": [4, 1, 4, 1],
             "tint_index": 0,
             "layer0.opacity": 1.0,
-            "tint_modifier": [255, 255, 255, 0.05],
+            "tint_modifier": "hsla(0, 0%, 100%, 0.05)",
         },
         {
             "class": "auto_complete",
             "attributes": ["file_light"],
-            "tint_modifier": [0, 0, 0, 0.05],
+            "tint_modifier": "hsla(0, 0%, 0%, 0.05)",
         },
         {
             "class": "scroll_bar_control",
             "parents": [{"class": "popup_control auto_complete_popup"}],
-            "tint_modifier": [0, 0, 0, 0.05],
+            "tint_modifier": "hsla(0, 0%, 0%, 0.05)",
         },
         {
             "class": "scroll_bar_control",
             "attributes": ["dark"],
             "parents": [{"class": "popup_control auto_complete_popup"}],
-            "tint_modifier": [255, 255, 255, 0.05],
+            "tint_modifier": "hsla(0, 0%, 100%, 0.05)",
         },
         {
             "class": "table_row",
-            "layer0.tint": [255, 255, 255],
+            "layer0.tint": "hsl(0, 0%, 100%)",
             "layer0.opacity": 0.0
         },
         {
             "class": "table_row",
             "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-            "layer0.tint": [0, 0, 0],
+            "layer0.tint": "hsl(0, 0%, 0%)",
             "layer0.opacity": 0.0
         },
         {
             "class": "auto_complete_label",
-            "fg": [0, 0, 0, 0.0],
-            "match_fg": [255, 255, 255, 0.18],
-            "selected_fg": [0, 0, 0, 0.0],
-            "selected_match_fg": [255, 255, 255, 0.18],
+            "fg": "transparent",
+            "match_fg": "hsla(0, 0%, 100%, 0.18)",
+            "selected_fg": "transparent",
+            "selected_match_fg": "hsla(0, 0%, 100%, 0.18)",
             "fg_blend": true
         },
         {
             "class": "auto_complete_label",
             "parents": [{"class": "auto_complete", "attributes": ["file_light"]}],
-            "fg": [0, 0, 0, 0.0],
-            "match_fg": [0, 0, 0, 0.18],
-            "selected_fg": [0, 0, 0, 0.0],
-            "selected_match_fg": [0, 0, 0, 0.18],
+            "fg": "transparent",
+            "match_fg": "hsla(0, 0%, 0%, 0.18)",
+            "selected_fg": "transparent",
+            "selected_match_fg": "hsla(0, 0%, 0%, 0.18)",
             "fg_blend": true
         },
         {
@@ -3537,7 +3537,7 @@
             "layer0.opacity": 1.0,
             "content_margin": [0, 0, 0, 0],
             "tint_index": 0,
-            "tint_modifier": [255, 255, 255, 0.32],
+            "tint_modifier": "hsla(0, 0%, 100%, 0.32)",
             "tab_height": 38,
             "tab_width": 32,
         },
@@ -3560,7 +3560,7 @@
             "class": "tab_control",
             "attributes": ["selected"],
             "layer1.tint": "var(header_bg)",
-            "tint_modifier": [255, 255, 255, 0.0],
+            "tint_modifier": "transparent",
             "layer3.opacity": 0.0,
         },
         {
