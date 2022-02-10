@@ -1,29 +1,13 @@
 {
-    "variables":
-    {   
+    "variables": {
         // Color palette
-        "background": "hsl(0, 0%, 13%)",
         "diff_scheme_background": "hsl(255, 7%, 11%)",
+        "background": "hsl(0, 0%, 13%)",
         "foreground": "hsl(0, 0%, 100%)",
-        
-        "text-heading": "hsl(0, 0%, 100%)",
-        "text": "hsl(0, 0%, 100%)",
+        "text_heading_fg": "hsl(0, 0%, 100%)",
     
         // Colors
         "red": "hsl(0, 100%, 50%)",
-
-        "darker_red": "color(var(red) l(- 10%))",
-
-        "light_blue": "hsl(210, 60%, 83%)",
-        "light_red": "hsl(0, 60%, 83%)",
-        "light_orange": "hsl(32, 60%, 83%)",
-        "light_green": "hsl(114, 60%, 83%)",
-
-        "light_gray": "hsl(210, 10%, 93%)",
-        "light_gray-medium": "hsl(210, 5%, 87%)",
-        "light_gray-dark": "hsl(210, 10%, 80%)",
-        "medium_gray-light": "hsl(210, 10%, 70%)",
-
         "orange": "hsl(32, 80%, 60%)",
         "yellow": "hsl(44, 100%, 60%)",
         "green": "hsl(120, 60%, 60%)",
@@ -34,8 +18,8 @@
 
         "dark_red": "color(var(red) s(25%) l(35%))",
         "dark_teal": "color(var(teal) s(25%) l(35%))",
-        "dark_blue": "color(var(blue) s(25%) l(35%))",
 
+        "medium_gray-light": "hsl(210, 10%, 70%)",
         "medium_gray": "hsl(210, 10%, 50%)",
         "medium_gray-dark": "hsl(210, 10%, 35%)",
         "dark_gray-lightest": "hsl(210, 10%, 19%)",
@@ -53,13 +37,13 @@
 
         "branch_stats_label_bg": "var(medium_gray)",
         
-        "label_color": "var(text-heading)",
-        "help_label_color": "color(var(text-heading) a(0.6))",
+        "label_color": "var(foreground)",
+        "help_label_color": "color(var(foreground) a(0.6))",
 
         // Header
         "title_bar_style": "light",
         "header_bg": "var(background)",
-        "header_fg": "var(text-heading)",
+        "header_fg": "var(text_heading_fg)",
         "header_button_bg": "hsl(210, 12%, 32%)",
         "header_button_hover_bg": "hsl(210, 16%, 42%)",
         "icon_button_fg": "hsl(0, 0%, 100%)",
@@ -98,7 +82,7 @@
         "untracked_file_tab_bg": "var(untracked_header_bg)",
         "unmerged_file_tab_bg": "var(unmerged_header_bg)",
         "location_tab_bg": "var(detail_panel_bg)",
-        "tab_button_fg": "var(text-heading)",
+        "tab_button_fg": "var(foreground)",
         "tab_separator_bg": "hsl(0, 0%, 100%)",
         
         "file_badge_modified_bg": "hsl(61, 100%, 78%)",
@@ -128,8 +112,8 @@
         "highlighted_button_shadow": "color(black a(0.5) l(+ 10%))",
 
         "toggle_button_bg": "hsl(208, 10%, 26%)",
-        "toggle_button_fg": "var(text)",
-        "toggle_button_fg_selected": "var(text-heading)",
+        "toggle_button_fg": "var(foreground)",
+        "toggle_button_fg_selected": "var(foreground)",
         "toggle_button_bg-details": "hsl(208, 8%, 38%)",
 
         // Hazard buttons
@@ -156,8 +140,8 @@
         // Location bar
         "submodule_stat_bg": "var(orange)",
         "submodule_stat_fg": "white",
-        "location_bar_fg": "var(text)",
-        "location_bar_heading_fg": "var(text-heading)",
+        "location_bar_fg": "var(foreground)",
+        "location_bar_heading_fg": "var(text_heading_fg)",
         "location_bar_heading_shadow": "black",
         "location_bar_row_bg-hover": "var(background)",
         "disclosure_fg": "white",
@@ -166,7 +150,7 @@
         "commit_list_bg": [40,40,40],
         "commit_selected_row_bg": [75,75,75],
         "commit_row_bg-hover": "hsl(0, 0%, 7%)",
-        "commit_summary_fg-primary": "var(text-heading)",
+        "commit_summary_fg-primary": "var(foreground)",
         "commit_summary_fg-secondary": "hsl(0, 0%, 73%)",
         "commit_color_count": 6,
 
@@ -183,8 +167,8 @@
 
         // Table of Contents
         "table_of_contents_bg": "var(dark_gray-medium)",
-        "table_of_contents_fg": "var(text)",
-        "table_of_contents_heading_fg": "var(text-heading)",
+        "table_of_contents_fg": "var(foreground)",
+        "table_of_contents_heading_fg": "var(text_heading_fg)",
         "table_of_contents_row_bg": "var(medium_gray)",
 
         // Annotations
@@ -213,21 +197,21 @@
         "stash_ann_fg": "var(yellow)",
         "stash_ann_bg": "color(var(yellow) a(0.3))",
 
-        "file_ann_fg": "var(text)",
+        "file_ann_fg": "var(foreground)",
         "file_ann_bg": "color(var(file_ann_fg) a(0.3))",
         
-        "submodule_ann_fg": "var(text)",
+        "submodule_ann_fg": "var(foreground)",
         "submodule_ann_bg": "var(dark_gray-lightest)",
         "submodule_light_ann_bg": "var(dark_gray-lightest)",
 
         "inserted_ann_bg": "color(var(dark_teal) s(- 10%))",
         "deleted_ann_bg": "color(var(dark_red) s(- 10%))",
 
-        "submodule_light_ann_fg": "color(var(text) a(0.5))",
+        "submodule_light_ann_fg": "color(var(foreground) a(0.5))",
         
         // Detail panel
         "detail_panel_bg": "var(background)",
-        "field_name_fg": "var(text)",
+        "field_name_fg": "var(foreground)",
         "author_fg": "hsl(0, 0%, 73%)",
         "terminator_fg": "var(medium_gray)",
         
@@ -243,11 +227,11 @@
 
         "hunk_header_bg": "hsl(0, 0%, 27%)",
 
-        "deleted_icon_fg": "var(text)",
+        "deleted_icon_fg": "var(foreground)",
         "deleted_header_bg": "var(dark_red)",
         "deleted_header_bg-hover": "color(var(dark_red) l(+ 5%))",
 
-        "unmerged_icon_fg": "color(var(text) l(+ 20%))",
+        "unmerged_icon_fg": "color(var(foreground) l(+ 20%))",
         "unmerged_header_bg": "hsl(26, 60%, 40%)",
         "unmerged_header_bg-hover": "color(var(unmerged_header_bg) l(+ 5%))",
 
@@ -259,7 +243,7 @@
         "expand_all_diff_bg": "hsl(205, 11%, 21%)",
         "expand_all_diff_bg-hover": "color(var(expand_all_diff_bg) l(+ 5%))",
 
-        "staged_icon_fg": "var(text)",
+        "staged_icon_fg": "var(foreground)",
         "staged_header_bg": "hsl(98, 11%, 20%)",
         "staged_header_bg-hover": "color(var(staged_header_bg) l(+ 5%))",
 
@@ -271,14 +255,14 @@
         // Quick panel
         "quick_panel_bg": "var(dark_gray-light)",
         "quick_panel_row_bg": "var(dark_gray)",
-        "quick_panel_fg": "var(text)",
-        "quick_panel_fg-match": "var(text-heading)",
-        "quick_panel_fg-selected": "var(text)",
-        "quick_panel_fg-selected-match": "var(text-heading)",
-        "quick_panel_path_fg": "var(text)",
-        "quick_panel_path_fg-match": "var(text-heading)",
-        "quick_panel_path_fg-selected": "var(text)",
-        "quick_panel_path_fg-selected-match": "var(text-heading)",
+        "quick_panel_fg": "var(foreground)",
+        "quick_panel_fg-match": "var(foreground)",
+        "quick_panel_fg-selected": "var(foreground)",
+        "quick_panel_fg-selected-match": "var(foreground)",
+        "quick_panel_path_fg": "var(foreground)",
+        "quick_panel_path_fg-match": "var(foreground)",
+        "quick_panel_path_fg-selected": "var(foreground)",
+        "quick_panel_path_fg-selected-match": "var(foreground)",
 
         // Command Palette
         "preview_fg": "white",
@@ -319,7 +303,7 @@
         "hint_fg": "black",
 
         "success_hint_bg": "var(dialog_bg)",
-        "success_hint_fg": "var(text)",
+        "success_hint_fg": "var(foreground)",
         "success_hint_accent": "var(green)",
 
         "error_hint_bg": "var(hint_bg)",
@@ -337,17 +321,17 @@
         "console_border": "color(var(dark_gray-lightest) l(20%))",
         
         // Output status icon
-        "output_fg": "var(text)",
+        "output_fg": "var(foreground)",
         "output_succeeded_fg": "var(green)",
-        "output_failed_fg": "var(darker_red)",
+        "output_failed_fg": "hsl(0, 100%, 40%)",
         "output_running_fg": "var(blue)",
-        "output_cancelled_fg": "var(text)",
+        "output_cancelled_fg": "var(foreground)",
 
         // Scroll shadow
         "scroll_shadow": "color(black a(0.3))",
 
         // Focus highlight
-        "focus_highlight_color": "var(text)",
+        "focus_highlight_color": "var(foreground)",
 
         // Welcome overlay
         "welcome_bg": "color(var(dark_gray) l(- 3%))",
@@ -357,9 +341,9 @@
         "preferences_overlay_bg": "hsl(0, 0%, 20%)",
         "preferences_section_table_bg": "hsl(0, 0%, 20%)",
     },
-    "rules":
-    [
-        // browse page
+    
+    "rules": [
+        // Browse page
         {
             "class": "console_panel",
             "layer0.tint": "var(console_border)",
@@ -452,8 +436,7 @@
         },
         {
             "class": "label_control",
-            "parents":
-            [
+            "parents": [
                 {"class": "button_control", "attributes": ["confirm"]}
             ],
             "fg": "var(hazard_button_fg)",
@@ -467,8 +450,7 @@
         },
         {
             "class": "label_control",
-            "parents":
-            [
+            "parents": [
                 {"class": "button_control", "attributes": ["disabled"]}
             ],
             "opacity": 0.7,
@@ -580,6 +562,37 @@
             "parents": [{"class": "tab", "attributes": ["selected"]}],
             "fg": "var(toggle_button_fg_selected)",
         },
+        {
+            "class": "details_tab_bar",
+            "layer0.tint": "var(tab_bar_bg)",
+            "layer0.opacity": 1.0,
+        },
+        {
+            "class": "scroll_area_control",
+            "parents": [{"class": "details_tab_bar"}],
+            "left_shadow": "var(scroll_shadow)",
+            "left_shadow_size": 8,
+            "right_shadow": "var(scroll_shadow)",
+            "right_shadow_size": 8,
+        },
+        {
+            "class": "label_control",
+            "parents": [{"class": "details_tab_bar"}],
+            "fg": "var(tab_button_fg)",
+        },
+        {
+            "class": "label_control",
+            "parents": [{"class": "all_button"}],
+            "fg": "var(tab_button_fg)",
+        },
+        {
+            "class": "label_control",
+            "parents": [
+                {"class": "details_tab_bar"},
+                {"class": "tab", "attributes": ["selected"]},
+            ],
+            "fg": "var(tab_button_fg)",
+        },
         
         // Side bar tabs
         {
@@ -599,41 +612,6 @@
             "parents": [{"class": "side_bar_container"}],
             "attributes": ["hover", "!selected"],
             "layer0.tint": "hsl(0, 0%, 38%)",
-        },
-
-        // File tabs
-        {
-            "class": "details_tab_bar",
-            "layer0.tint": "var(tab_bar_bg)",
-            "layer0.opacity": 1.0,
-        },
-        {
-            "class": "scroll_area_control",
-            "parents": [{"class": "details_tab_bar"}],
-            "left_shadow": "var(scroll_shadow)",
-            "left_shadow_size": 8,
-            "right_shadow": "var(scroll_shadow)",
-            "right_shadow_size": 8,
-        },
-        {
-            "class": "label_control",
-            "parents": [{"class": "details_tab_bar"}],
-            "fg": "var(tab_button_fg)",
-        },
-        
-        {
-            "class": "label_control",
-            "parents": [{"class": "all_button"}],
-            "fg": "var(tab_button_fg)",
-        },
-        {
-            "class": "label_control",
-            "parents":
-            [
-                {"class": "details_tab_bar"},
-                {"class": "tab", "attributes": ["selected"]},
-            ],
-            "fg": "var(tab_button_fg)",
         },
         
         // Checkboxes
@@ -1056,10 +1034,10 @@
         {
             "class": "toggle_diverged_banner_button hide",
             "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
-            "layer0.tint": "var(text)",
+            "layer0.tint": "var(foreground)",
             "layer1.texture": "NorberTheme/icons/icon_diverged_border.png",
             "layer1.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
-            "layer1.tint": "var(text)",
+            "layer1.tint": "var(foreground)",
         },
         {
             "class": "toggle_diverged_banner_button",
@@ -1283,8 +1261,7 @@
         },
         {
             "class": "icon_more_hunk",
-            "parents":
-            [
+            "parents": [
                 {"class": "file_diff_hunk_container", "attributes": ["!hover"]}
             ],
             "attributes": ["!confirm"],
@@ -1292,8 +1269,7 @@
         },
         {
             "class": "icon_more_hunk",
-            "parents":
-            [
+            "parents": [
                 {"class": "file_diff_hunk_header", "attributes": ["selected"]}
             ],
             "layer0.opacity": 0.6,
@@ -1621,14 +1597,10 @@
         },
         {
             "class": "icon_visible",
-            "parents":
-            [
-                {
-                    "class": "side_bar_container",
-                    "attributes": ["hover"],
-                },
-
-            ],
+            "parents": [{
+                "class": "side_bar_container",
+                "attributes": ["hover"],
+            }],
             "layer0.opacity": "var(icon_button_opacity)",
         },
         {
@@ -1668,13 +1640,11 @@
         },
         {
             "class": "icon_section_actions",
-            "parents":
-            [
+            "parents": [
                 {
                     "class": "side_bar_container",
                     "attributes": ["hover"],
                 },
-
             ],
             "layer0.opacity": "var(icon_button_opacity)",
         },
@@ -1945,7 +1915,7 @@
             "class": "condensed_branch_icon",
             "layer0.texture": "NorberTheme/icons/icon_condensed_branch_annotation.png",
             "layer0.opacity": 1.0,
-            "layer0.tint": "var(text)",
+            "layer0.tint": "var(foreground)",
             "content_margin": [6, 8, 6, 8],
         },
         {
@@ -1961,7 +1931,7 @@
             "class": "condensed_branch_annotation",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "color": "var(text)",
+            "color": "var(foreground)",
         },
         {
             "class": "stash_annotation",
@@ -2660,7 +2630,7 @@
         },
         {
             "class": "icon_text",
-            "color": "var(text)",
+            "color": "var(foreground)",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)"
         },
@@ -2702,8 +2672,7 @@
         },
         {
             "class": "label_control",
-            "parents":
-            [
+            "parents": [
                 {"class": "file_diff_header"},
                 {"class": "button_control"}
             ],
@@ -2711,8 +2680,7 @@
         },
         {
             "class": "label_control",
-            "parents":
-            [
+            "parents": [
                 {"class": "file_diff_header"},
                 {"class": "button_control", "attributes": ["confirm"]},
             ],
@@ -2720,19 +2688,15 @@
         },
         {
             "class": "label_control",
-            "parents":
-            [
+            "parents": [
                 {"class": "expand_all_diff_control"},
                 {"class": "file_meta"}
             ],
-            "fg": "var(text)",
+            "fg": "var(foreground)",
         },
         {
             "class": "eliding_label_control",
-            "parents":
-            [
-                {"class": "file_diff_header"},
-            ],
+            "parents": [{"class": "file_diff_header"}],
             "color": "var(label_color)",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
@@ -2769,10 +2733,7 @@
         },
         {
             "class": "disclosure_button_control",
-            "parents":
-            [
-                {"class": "file_diff_header", "attributes": ["hover"]}
-            ],
+            "parents": [{"class": "file_diff_header", "attributes": ["hover"]} ],
             "layer0.opacity": 1
         },
         {
@@ -2815,10 +2776,7 @@
         },
         {
             "class": "icon_full_context",
-            "parents":
-            [
-                {"class": "file_diff_hunk_container", "attributes": ["!hover"]}
-            ],
+            "parents": [{"class": "file_diff_hunk_container", "attributes": ["!hover"]} ],
             "layer0.opacity": 0.0,
             "layer1.opacity": 0.0,
         },
@@ -2930,52 +2888,36 @@
         },
         {
             "class": "hunk_button",
-            "parents":
-            [
-                {"class": "file_diff_hunk_container", "attributes": ["!hover"]}
-            ],
+            "parents": [{"class": "file_diff_hunk_container", "attributes": ["!hover"]} ],
             "attributes": ["!confirm"],
             "layer1.opacity": 0.0,
             "layer2.opacity": 0.0,
         },
         {
             "class": "hunk_button",
-            "parents":
-            [
-                {"class": "file_diff_hunk_container", "attributes": ["hover"]}
-            ],
+            "parents": [{"class": "file_diff_hunk_container", "attributes": ["hover"]} ],
             "layer1.opacity": 0.6,
         },
         {
             "class": "hunk_button",
-            "parents":
-            [
-                {"class": "file_diff_hunk_header", "attributes": ["selected"]}
-            ],
+            "parents": [{"class": "file_diff_hunk_header", "attributes": ["selected"]} ],
             "layer1.opacity": 0.6,
         },
         {
             "class": "hunk_button",
-            "parents":
-            [
-                {"class": "file_diff_hunk_container", "attributes": ["hover"]}
-            ],
+            "parents": [{"class": "file_diff_hunk_container", "attributes": ["hover"]} ],
             "attributes": ["hover"],
             "layer1.opacity": { "target": 0.8, "speed": 4.0, "interpolation": "smoothstep" },
         },
         {
             "class": "hunk_button",
-            "parents":
-            [
-                {"class": "file_diff_hunk_container", "attributes": ["hover"]}
-            ],
+            "parents": [{"class": "file_diff_hunk_container", "attributes": ["hover"]} ],
             "attributes": ["pressed"],
             "layer1.opacity": { "target": 1.0, "speed": 4.0, "interpolation": "smoothstep" },
         },
         {
             "class": "label_control",
-            "parents":
-            [
+            "parents": [
                 {"class": "file_diff_hunk_container"},
                 {"class": "hunk_button", "attributes": ["!confirm"]}
             ],
@@ -2984,8 +2926,7 @@
         },
         {
             "class": "label_control",
-            "parents":
-            [
+            "parents": [
                 {"class": "file_diff_hunk_container", "attributes": ["hover"]},
                 {"class": "hunk_button", "attributes": ["!confirm"]}
             ],
@@ -2995,8 +2936,7 @@
         },
         {
             "class": "label_control",
-            "parents":
-            [
+            "parents": [
                 {"class": "file_diff_hunk_header", "attributes": ["selected"]},
                 {"class": "hunk_button", "attributes": ["!confirm"]}
             ],
@@ -3035,10 +2975,7 @@
         },
         {
             "class": "unmerged_badge",
-            "parents":
-            [
-                {"class": "file_diff_header collapsible", "attributes": ["hover"]},
-            ],
+            "parents": [{"class": "file_diff_header collapsible", "attributes": ["hover"]}, ],
             "layer0.tint": "var(unmerged_header_bg-hover)",
         },
         {
@@ -3051,10 +2988,7 @@
         },
         {
             "class": "staged_badge",
-            "parents":
-            [
-                {"class": "file_diff_header"},
-            ],
+            "parents": [{"class": "file_diff_header"}, ],
             "layer0.tint": "var(file_badge_staged_bg)",
         },
         {
