@@ -1,6 +1,6 @@
 {
-	"variables":
-	{   
+    "variables":
+    {   
         // Color palette
         "background": "#222",
         "diff_scheme_background": "#1a191d",
@@ -24,26 +24,26 @@
         "light_gray-dark": "hsl(210, 10%, 80%)",
         "medium_gray-light": "hsl(210, 10%, 70%)",
 
-		"orange": "hsl(32, 80%, 60%)",
-		"yellow": "hsl(44, 100%, 60%)",
-		"green": "hsl(120, 60%, 60%)",
-		"teal": "hsl(180, 60%, 65%)",
-		"blue": "hsl(210, 65%, 70%)",
-		"purple": "hsl(260, 60%, 75%)",
-		"magenta": "hsl(330, 65%, 65%)",
+        "orange": "hsl(32, 80%, 60%)",
+        "yellow": "hsl(44, 100%, 60%)",
+        "green": "hsl(120, 60%, 60%)",
+        "teal": "hsl(180, 60%, 65%)",
+        "blue": "hsl(210, 65%, 70%)",
+        "purple": "hsl(260, 60%, 75%)",
+        "magenta": "hsl(330, 65%, 65%)",
 
-		"dark_red": "color(var(red) s(25%) l(35%))",
-		"dark_teal": "color(var(teal) s(25%) l(35%))",
-		"dark_blue": "color(var(blue) s(25%) l(35%))",
+        "dark_red": "color(var(red) s(25%) l(35%))",
+        "dark_teal": "color(var(teal) s(25%) l(35%))",
+        "dark_blue": "color(var(blue) s(25%) l(35%))",
 
-		"medium_gray": "hsl(210, 10%, 50%)",
-		"medium_gray-dark": "hsl(210, 10%, 35%)",
-		"dark_gray-lightest": "hsl(210, 10%, 19%)",
-		"dark_gray-light": "hsl(210, 10%, 16%)",
-		"dark_gray-medium": "hsl(210, 10%, 13%)",
-		"dark_gray": "hsl(210, 10%, 10%)",
+        "medium_gray": "hsl(210, 10%, 50%)",
+        "medium_gray-dark": "hsl(210, 10%, 35%)",
+        "dark_gray-lightest": "hsl(210, 10%, 19%)",
+        "dark_gray-light": "hsl(210, 10%, 16%)",
+        "dark_gray-medium": "hsl(210, 10%, 13%)",
+        "dark_gray": "hsl(210, 10%, 10%)",
         
-		// Labels
+        // Labels
         "font_face": "Consolas",
         "font_size": 14,
         "font_size_sm": 12,
@@ -53,16 +53,16 @@
 
         "branch_stats_label_bg": "var(medium_gray)",
         
-		"label_color": "var(text-heading)",
-		"help_label_color": "color(var(text-heading) a(0.6))",
+        "label_color": "var(text-heading)",
+        "help_label_color": "color(var(text-heading) a(0.6))",
 
-		// Header
-		"title_bar_style": "light",
-		"header_bg": "var(background)",
-		"header_fg": "var(text-heading)",
+        // Header
+        "title_bar_style": "light",
+        "header_bg": "var(background)",
+        "header_fg": "var(text-heading)",
         "header_button_bg": "hsl(210, 12%, 32%)",
-		"header_button_hover_bg": "hsl(210, 16%, 42%)",
-		"icon_button_fg": "#fff",
+        "header_button_hover_bg": "hsl(210, 16%, 42%)",
+        "icon_button_fg": "#fff",
         
         "icon_button_opacity": {"target": 0.8, "speed": 1.0, "interpolation": "smoothstep"},
         "icon_button_opacity-hidden": {"target": 0.0, "speed": 1.0, "interpolation": "smoothstep"},
@@ -73,17 +73,17 @@
         
         "hidden_slash": "var(orange)",
         
-		"icon_button_opacity-tab_bar": {"target": 0.7, "speed": 1.0, "interpolation": "smoothstep"},
-		"icon_button_opacity-tab_bar-faded": {"target": 0.4, "speed": 1.0, "interpolation": "smoothstep"},
-		"icon_button_opacity-tab_bar-hover": {"target": 1, "speed": 1.0, "interpolation": "smoothstep"},
+        "icon_button_opacity-tab_bar": {"target": 0.7, "speed": 1.0, "interpolation": "smoothstep"},
+        "icon_button_opacity-tab_bar-faded": {"target": 0.4, "speed": 1.0, "interpolation": "smoothstep"},
+        "icon_button_opacity-tab_bar-hover": {"target": 1, "speed": 1.0, "interpolation": "smoothstep"},
 
-		"info_shadow": "color(black a(0.2))",
+        "info_shadow": "color(black a(0.2))",
         "info-progress_bar_bg": "#ccc",
         "info-progress_bar_fg": "#888",
 
-		"diverged_bg": "color(var(orange) l(- 5%) s(- 20%))",
-		"diverged_button_bg": "var(button_bg)",
-		"diverged_button_fg": "var(dark_gray)",
+        "diverged_bg": "color(var(orange) l(- 5%) s(- 20%))",
+        "diverged_button_bg": "var(button_bg)",
+        "diverged_button_fg": "var(dark_gray)",
         "diverged_button_shadow": "color(white a(0.2))",
         "diverged_icon_bg": "var(orange)",
         "diverged_icon_fg": "color(var(diverged_bg) l(- 30%) s(- 10%))",
@@ -156,165 +156,165 @@
         // Location bar
         "submodule_stat_bg": "var(orange)",
         "submodule_stat_fg": "white",
-		"location_bar_fg": "var(text)",
-		"location_bar_heading_fg": "var(text-heading)",
-		"location_bar_heading_shadow": "black",
-		"location_bar_row_bg-hover": "var(background)",
-		"disclosure_fg": "white",
+        "location_bar_fg": "var(text)",
+        "location_bar_heading_fg": "var(text-heading)",
+        "location_bar_heading_shadow": "black",
+        "location_bar_row_bg-hover": "var(background)",
+        "disclosure_fg": "white",
 
-		// Commit list
-		"commit_list_bg": [40,40,40],
+        // Commit list
+        "commit_list_bg": [40,40,40],
         "commit_selected_row_bg": [75,75,75],
-		"commit_row_bg-hover": "#111",
-		"commit_summary_fg-primary": "var(text-heading)",
-		"commit_summary_fg-secondary": "#bbb",
+        "commit_row_bg-hover": "#111",
+        "commit_summary_fg-primary": "var(text-heading)",
+        "commit_summary_fg-secondary": "#bbb",
         "commit_color_count": 6,
 
-		"commit_edge_0": "var(blue)",
-		"commit_edge_1": "var(purple)",
-		"commit_edge_2": "var(magenta)",
-		"commit_edge_3": "color(var(red) s(70%) l(70%))",
-		"commit_edge_4": "color(var(yellow) l(60%) s(75%))",
-		"commit_edge_5": "color(var(teal))",
+        "commit_edge_0": "var(blue)",
+        "commit_edge_1": "var(purple)",
+        "commit_edge_2": "var(magenta)",
+        "commit_edge_3": "color(var(red) s(70%) l(70%))",
+        "commit_edge_4": "color(var(yellow) l(60%) s(75%))",
+        "commit_edge_5": "color(var(teal))",
 
         // Side Bar
-		"side_bar_container_bg": "var(dark_gray-light)",
+        "side_bar_container_bg": "var(dark_gray-light)",
         "side_bar_container_with_graph_bg": "#282828",
 
-		// Table of Contents
-		"table_of_contents_bg": "var(dark_gray-medium)",
-		"table_of_contents_fg": "var(text)",
-		"table_of_contents_heading_fg": "var(text-heading)",
-		"table_of_contents_row_bg": "var(medium_gray)",
+        // Table of Contents
+        "table_of_contents_bg": "var(dark_gray-medium)",
+        "table_of_contents_fg": "var(text)",
+        "table_of_contents_heading_fg": "var(text-heading)",
+        "table_of_contents_row_bg": "var(medium_gray)",
 
-		// Annotations
-		"commit_annotation_fg": "#adf",
-		"commit_annotation_fg_inverted": "color(black)",
-		"commit_annotation_bg": "var(dark_gray-medium)",
+        // Annotations
+        "commit_annotation_fg": "#adf",
+        "commit_annotation_fg_inverted": "color(black)",
+        "commit_annotation_bg": "var(dark_gray-medium)",
 
-		"commit_annotation_fg_0_border": "var(commit_edge_0)",
-		"commit_annotation_fg_1_border": "var(commit_edge_1)",
-		"commit_annotation_fg_2_border": "var(commit_edge_2)",
-		"commit_annotation_fg_3_border": "var(commit_edge_3)",
-		"commit_annotation_fg_4_border": "var(commit_edge_4)",
-		"commit_annotation_fg_5_border": "var(commit_edge_5)",
+        "commit_annotation_fg_0_border": "var(commit_edge_0)",
+        "commit_annotation_fg_1_border": "var(commit_edge_1)",
+        "commit_annotation_fg_2_border": "var(commit_edge_2)",
+        "commit_annotation_fg_3_border": "var(commit_edge_3)",
+        "commit_annotation_fg_4_border": "var(commit_edge_4)",
+        "commit_annotation_fg_5_border": "var(commit_edge_5)",
 
-		"commit_annotation_bg_inverted_0": "var(commit_edge_0)",
-		"commit_annotation_bg_inverted_1": "var(commit_edge_1)",
-		"commit_annotation_bg_inverted_2": "var(commit_edge_2)",
-		"commit_annotation_bg_inverted_3": "var(commit_edge_3)",
-		"commit_annotation_bg_inverted_4": "var(commit_edge_4)",
-		"commit_annotation_bg_inverted_5": "var(commit_edge_5)",
+        "commit_annotation_bg_inverted_0": "var(commit_edge_0)",
+        "commit_annotation_bg_inverted_1": "var(commit_edge_1)",
+        "commit_annotation_bg_inverted_2": "var(commit_edge_2)",
+        "commit_annotation_bg_inverted_3": "var(commit_edge_3)",
+        "commit_annotation_bg_inverted_4": "var(commit_edge_4)",
+        "commit_annotation_bg_inverted_5": "var(commit_edge_5)",
 
-		"tag_ann_fg": "var(dark_gray)",
-		"tag_ann_bg": "color(var(yellow) a(0.8))",
-		"tag_ann_opacity": 0.4,
+        "tag_ann_fg": "var(dark_gray)",
+        "tag_ann_bg": "color(var(yellow) a(0.8))",
+        "tag_ann_opacity": 0.4,
 
-		"stash_ann_fg": "var(yellow)",
-		"stash_ann_bg": "color(var(yellow) a(0.3))",
+        "stash_ann_fg": "var(yellow)",
+        "stash_ann_bg": "color(var(yellow) a(0.3))",
 
-		"file_ann_fg": "var(text)",
-		"file_ann_bg": "color(var(file_ann_fg) a(0.3))",
+        "file_ann_fg": "var(text)",
+        "file_ann_bg": "color(var(file_ann_fg) a(0.3))",
         
         "submodule_ann_fg": "var(text)",
-		"submodule_ann_bg": "var(dark_gray-lightest)",
-		"submodule_light_ann_bg": "var(dark_gray-lightest)",
+        "submodule_ann_bg": "var(dark_gray-lightest)",
+        "submodule_light_ann_bg": "var(dark_gray-lightest)",
 
-		"inserted_ann_bg": "color(var(dark_teal) s(- 10%))",
-		"deleted_ann_bg": "color(var(dark_red) s(- 10%))",
+        "inserted_ann_bg": "color(var(dark_teal) s(- 10%))",
+        "deleted_ann_bg": "color(var(dark_red) s(- 10%))",
 
         "submodule_light_ann_fg": "color(var(text) a(0.5))",
         
-		// Detail panel
-		"detail_panel_bg": "var(background)",
-		"field_name_fg": "var(text)",
-		"author_fg": "#bbb",
-		"terminator_fg": "var(medium_gray)",
+        // Detail panel
+        "detail_panel_bg": "var(background)",
+        "field_name_fg": "var(text)",
+        "author_fg": "#bbb",
+        "terminator_fg": "var(medium_gray)",
         
-		// Diff headers
-		"file_diff_shadow": "color(black a(0.5))",
-		"file_icon_bg": "color(white a(0.2))",
+        // Diff headers
+        "file_diff_shadow": "color(black a(0.5))",
+        "file_icon_bg": "color(white a(0.2))",
 
-		"hunk_button_fg": "#eee",
-		"hunk_button_shadow": "color(black a(0.5))",
+        "hunk_button_fg": "#eee",
+        "hunk_button_shadow": "color(black a(0.5))",
 
-		"file_header_bg": "var(diff_scheme_background)",
-		"file_header_bg-hover": "#2a3136",
+        "file_header_bg": "var(diff_scheme_background)",
+        "file_header_bg-hover": "#2a3136",
 
-		"hunk_header_bg": "#444",
+        "hunk_header_bg": "#444",
 
-		"deleted_icon_fg": "var(text)",
-		"deleted_header_bg": "var(dark_red)",
-		"deleted_header_bg-hover": "color(var(dark_red) l(+ 5%))",
+        "deleted_icon_fg": "var(text)",
+        "deleted_header_bg": "var(dark_red)",
+        "deleted_header_bg-hover": "color(var(dark_red) l(+ 5%))",
 
-		"unmerged_icon_fg": "color(var(text) l(+ 20%))",
-		"unmerged_header_bg": "#a45f29",
-		"unmerged_header_bg-hover": "color(var(unmerged_header_bg) l(+ 5%))",
+        "unmerged_icon_fg": "color(var(text) l(+ 20%))",
+        "unmerged_header_bg": "#a45f29",
+        "unmerged_header_bg-hover": "color(var(unmerged_header_bg) l(+ 5%))",
 
-		"recent_icon_fg": "var(yellow)",
-		"recent_icon_bg": "transparent",
-		"untracked_header_bg": "#422323",
-		"untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 7%))",
+        "recent_icon_fg": "var(yellow)",
+        "recent_icon_bg": "transparent",
+        "untracked_header_bg": "#422323",
+        "untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 7%))",
         
         "expand_all_diff_bg": "#30373c",
         "expand_all_diff_bg-hover": "color(var(expand_all_diff_bg) l(+ 5%))",
 
-		"staged_icon_fg": "var(text)",
+        "staged_icon_fg": "var(text)",
         "staged_header_bg": "#31382d",
         "staged_header_bg-hover": "color(var(staged_header_bg) l(+ 5%))",
 
-		"renamed_file_inserted": "color(var(green) s(30%) l(60%))",
-		"renamed_file_deleted": "color(var(red) s(50%) l(65%))",
+        "renamed_file_inserted": "color(var(green) s(30%) l(60%))",
+        "renamed_file_deleted": "color(var(red) s(50%) l(65%))",
 
-		"full_context_icon_bg": "var(medium_gray-light)",
+        "full_context_icon_bg": "var(medium_gray-light)",
 
-		// Quick panel
-		"quick_panel_bg": "var(dark_gray-light)",
-		"quick_panel_row_bg": "var(dark_gray)",
-		"quick_panel_fg": "var(text)",
-		"quick_panel_fg-match": "var(text-heading)",
-		"quick_panel_fg-selected": "var(text)",
-		"quick_panel_fg-selected-match": "var(text-heading)",
-		"quick_panel_path_fg": "var(text)",
-		"quick_panel_path_fg-match": "var(text-heading)",
-		"quick_panel_path_fg-selected": "var(text)",
-		"quick_panel_path_fg-selected-match": "var(text-heading)",
+        // Quick panel
+        "quick_panel_bg": "var(dark_gray-light)",
+        "quick_panel_row_bg": "var(dark_gray)",
+        "quick_panel_fg": "var(text)",
+        "quick_panel_fg-match": "var(text-heading)",
+        "quick_panel_fg-selected": "var(text)",
+        "quick_panel_fg-selected-match": "var(text-heading)",
+        "quick_panel_path_fg": "var(text)",
+        "quick_panel_path_fg-match": "var(text-heading)",
+        "quick_panel_path_fg-selected": "var(text)",
+        "quick_panel_path_fg-selected-match": "var(text-heading)",
 
-		// Command Palette
-		"preview_fg": "white",
+        // Command Palette
+        "preview_fg": "white",
         
-		// File Diffs
-		"onion_skin_slider_puck_bg": "color(var(medium_gray) l(+ 5%))",
-		"onion_skin_slider_puck_border_bg": "var(medium_gray-dark)",
-		"onion_skin_slider_track_bg": "var(medium_gray-dark)",
+        // File Diffs
+        "onion_skin_slider_puck_bg": "color(var(medium_gray) l(+ 5%))",
+        "onion_skin_slider_puck_border_bg": "var(medium_gray-dark)",
+        "onion_skin_slider_track_bg": "var(medium_gray-dark)",
 
-		// Image Diffs
+        // Image Diffs
         "image_diff_bg": "var(detail_panel_bg)",
         "image_diff_fg": "var(label_color)",
         "image_diff_checkerboard_main_bg": "var(background)",
-		"image_diff_checkerboard_alt_bg": "color(var(background) l(- 10%))",
-		"image_metadata_label_bg": "var(medium_gray-dark)",
+        "image_diff_checkerboard_alt_bg": "color(var(background) l(- 10%))",
+        "image_metadata_label_bg": "var(medium_gray-dark)",
 
-		// Blame
-		"blame_popup_bg": "color(var(background) l(+ 10%))",
+        // Blame
+        "blame_popup_bg": "color(var(background) l(+ 10%))",
 
-		// Dialogs
-		"dialog_bg": "var(dark_gray-light)",
-		"dialog_button_bg": "var(medium_gray)",
+        // Dialogs
+        "dialog_bg": "var(dark_gray-light)",
+        "dialog_button_bg": "var(medium_gray)",
 
-		// Progress bar
-		"progress_bg": "color(var(dark_gray-lightest) l(+ 3%))",
-		"progress_fg": "color(var(medium_gray) a(0.5))",
+        // Progress bar
+        "progress_bg": "color(var(dark_gray-lightest) l(+ 3%))",
+        "progress_fg": "color(var(medium_gray) a(0.5))",
 
-		// Switch repository window
-		"switch_repo_bg": "var(dark_gray-light)",
+        // Switch repository window
+        "switch_repo_bg": "var(dark_gray-light)",
 
-		// Tool tips
-		"tool_tip_bg": "#404040",
-		"tool_tip_fg": "#dddddd",
-		"tool_tip_border": "#777777",
+        // Tool tips
+        "tool_tip_bg": "#404040",
+        "tool_tip_fg": "#dddddd",
+        "tool_tip_border": "#777777",
 
-		// Hints
+        // Hints
         "hint_bg": "color(var(yellow) l(75%))",
         "hint_fg": "black",
 
@@ -326,15 +326,15 @@
         "error_hint_fg": "var(hint_fg)",
         "error_hint_accent": "var(orange)",
         "failed_label_bg": "var(orange)",
-		"failed_label_fg": "var(dark_gray)",
+        "failed_label_fg": "var(dark_gray)",
 
-		// Loading
-		"loading_ball_1": "var(medium_gray)",
-		"loading_ball_2": "var(blue)",
+        // Loading
+        "loading_ball_1": "var(medium_gray)",
+        "loading_ball_2": "var(blue)",
 
-		// Merge Helper
-		"merge_helper_highlight_bg": "color(var(dark_gray-lightest) l(25%))",
-		"console_border": "color(var(dark_gray-lightest) l(20%))",
+        // Merge Helper
+        "merge_helper_highlight_bg": "color(var(dark_gray-lightest) l(25%))",
+        "console_border": "color(var(dark_gray-lightest) l(20%))",
         
         // Output status icon
         "output_fg": "var(text)",
@@ -356,9 +356,9 @@
         // Preferences Page
         "preferences_overlay_bg": "#333",
         "preferences_section_table_bg": "#333",
-	},
-	"rules":
-	[
+    },
+    "rules":
+    [
         // browse page
         {
             "class": "console_panel",
