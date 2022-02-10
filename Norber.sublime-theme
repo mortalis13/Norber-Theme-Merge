@@ -2,12 +2,12 @@
     "variables":
     {   
         // Color palette
-        "background": "#222",
-        "diff_scheme_background": "#1a191d",
-        "foreground": "#fff",
+        "background": "hsl(0, 0%, 13%)",
+        "diff_scheme_background": "hsl(255, 7%, 11%)",
+        "foreground": "hsl(0, 0%, 100%)",
         
-        "text-heading": "#fff",
-        "text": "#fff",
+        "text-heading": "hsl(0, 0%, 100%)",
+        "text": "hsl(0, 0%, 100%)",
     
         // Colors
         "red": "hsl(0, 100%, 50%)",
@@ -62,7 +62,7 @@
         "header_fg": "var(text-heading)",
         "header_button_bg": "hsl(210, 12%, 32%)",
         "header_button_hover_bg": "hsl(210, 16%, 42%)",
-        "icon_button_fg": "#fff",
+        "icon_button_fg": "hsl(0, 0%, 100%)",
         
         "icon_button_opacity": {"target": 0.8, "speed": 1.0, "interpolation": "smoothstep"},
         "icon_button_opacity-hidden": {"target": 0.0, "speed": 1.0, "interpolation": "smoothstep"},
@@ -78,8 +78,8 @@
         "icon_button_opacity-tab_bar-hover": {"target": 1, "speed": 1.0, "interpolation": "smoothstep"},
 
         "info_shadow": "color(black a(0.2))",
-        "info-progress_bar_bg": "#ccc",
-        "info-progress_bar_fg": "#888",
+        "info-progress_bar_bg": "hsl(0, 0%, 80%)",
+        "info-progress_bar_fg": "hsl(0, 0%, 53%)",
 
         "diverged_bg": "color(var(orange) l(- 5%) s(- 20%))",
         "diverged_button_bg": "var(button_bg)",
@@ -92,27 +92,27 @@
         "overlay_bg": "var(header_bg)",
         
         // Tabs
-        "tab_bar_bg": "#505050",
+        "tab_bar_bg": "hsl(0, 0%, 31%)",
         "file_tab_bg": "var(tab_bar_bg)",
-        "file_tab_hover_bg": "#666",
+        "file_tab_hover_bg": "hsl(0, 0%, 40%)",
         "untracked_file_tab_bg": "var(untracked_header_bg)",
         "unmerged_file_tab_bg": "var(unmerged_header_bg)",
         "location_tab_bg": "var(detail_panel_bg)",
         "tab_button_fg": "var(text-heading)",
-        "tab_separator_bg": "#fff",
+        "tab_separator_bg": "hsl(0, 0%, 100%)",
         
-        "file_badge_modified_bg": "#feff90",
+        "file_badge_modified_bg": "hsl(61, 100%, 78%)",
         "file_badge_unmerged_bg": "var(unmerged_header_bg)",
         "repository_tab_bar_bg": "hsl(210, 10%, 30%)",
         "repository_tab_hover_bg": "hsl(210, 12%, 38%)",
         "repository_tab_bar_border_bg": "var(medium_gray-light)",
 
-        "file_badge_modified_fg": "#222",
-        "file_badge_unmerged_fg": "#2e1d07",
+        "file_badge_modified_fg": "hsl(0, 0%, 13%)",
+        "file_badge_unmerged_fg": "hsl(34, 74%, 10%)",
         "file_badge_untracked_bg": "var(detail_panel_bg)",
         "file_badge_untracked_fg": "var(medium_gray-dark)",
-        "file_badge_staged_bg": "#ccffba",
-        "file_badge_staged_fg": "#222",
+        "file_badge_staged_bg": "hsl(104, 100%, 86%)",
+        "file_badge_staged_fg": "hsl(0, 0%, 13%)",
         
         // Buttons
         "split_button_line": "var(background)",
@@ -127,10 +127,10 @@
         "highlighted_button_dark_fg": "var(label_color)",
         "highlighted_button_shadow": "color(black a(0.5) l(+ 10%))",
 
-        "toggle_button_bg": "#3B4248", // This matches the header hover buttons
+        "toggle_button_bg": "hsl(208, 10%, 26%)",
         "toggle_button_fg": "var(text)",
         "toggle_button_fg_selected": "var(text-heading)",
-        "toggle_button_bg-details": "#586067", // This matches the buttons in the details panel
+        "toggle_button_bg-details": "hsl(208, 8%, 38%)",
 
         // Hazard buttons
         "hazard_button_bg": "var(red)",
@@ -143,12 +143,12 @@
         // Radio buttons
         "radio_back": "var(background)",
         "radio_selected": "var(blue)",
-        "radio_border-unselected": "#a6a6a6",
+        "radio_border-unselected": "hsl(0, 0%, 65%)",
         "radio_border-selected": "var(blue)",
 
         // Checkbox buttons
-        "checkbox_border-unselected": "#a6a6a6",
-        "checkbox-disabled": "#a6a6a6",
+        "checkbox_border-unselected": "hsl(0, 0%, 65%)",
+        "checkbox-disabled": "hsl(0, 0%, 65%)",
         "checkbox_back": "var(background)",
         "checkbox_selected": "var(blue)",
         "checkbox_border-selected": "var(blue)",
@@ -165,9 +165,9 @@
         // Commit list
         "commit_list_bg": [40,40,40],
         "commit_selected_row_bg": [75,75,75],
-        "commit_row_bg-hover": "#111",
+        "commit_row_bg-hover": "hsl(0, 0%, 7%)",
         "commit_summary_fg-primary": "var(text-heading)",
-        "commit_summary_fg-secondary": "#bbb",
+        "commit_summary_fg-secondary": "hsl(0, 0%, 73%)",
         "commit_color_count": 6,
 
         "commit_edge_0": "var(blue)",
@@ -179,7 +179,7 @@
 
         // Side Bar
         "side_bar_container_bg": "var(dark_gray-light)",
-        "side_bar_container_with_graph_bg": "#282828",
+        "side_bar_container_with_graph_bg": "hsl(0, 0%, 16%)",
 
         // Table of Contents
         "table_of_contents_bg": "var(dark_gray-medium)",
@@ -188,7 +188,7 @@
         "table_of_contents_row_bg": "var(medium_gray)",
 
         // Annotations
-        "commit_annotation_fg": "#adf",
+        "commit_annotation_fg": "hsl(204, 100%, 83%)",
         "commit_annotation_fg_inverted": "color(black)",
         "commit_annotation_bg": "var(dark_gray-medium)",
 
@@ -228,39 +228,39 @@
         // Detail panel
         "detail_panel_bg": "var(background)",
         "field_name_fg": "var(text)",
-        "author_fg": "#bbb",
+        "author_fg": "hsl(0, 0%, 73%)",
         "terminator_fg": "var(medium_gray)",
         
         // Diff headers
         "file_diff_shadow": "color(black a(0.5))",
         "file_icon_bg": "color(white a(0.2))",
 
-        "hunk_button_fg": "#eee",
+        "hunk_button_fg": "hsl(0, 0%, 93%)",
         "hunk_button_shadow": "color(black a(0.5))",
 
         "file_header_bg": "var(diff_scheme_background)",
-        "file_header_bg-hover": "#2a3136",
+        "file_header_bg-hover": "hsl(205, 12%, 19%)",
 
-        "hunk_header_bg": "#444",
+        "hunk_header_bg": "hsl(0, 0%, 27%)",
 
         "deleted_icon_fg": "var(text)",
         "deleted_header_bg": "var(dark_red)",
         "deleted_header_bg-hover": "color(var(dark_red) l(+ 5%))",
 
         "unmerged_icon_fg": "color(var(text) l(+ 20%))",
-        "unmerged_header_bg": "#a45f29",
+        "unmerged_header_bg": "hsl(26, 60%, 40%)",
         "unmerged_header_bg-hover": "color(var(unmerged_header_bg) l(+ 5%))",
 
         "recent_icon_fg": "var(yellow)",
         "recent_icon_bg": "transparent",
-        "untracked_header_bg": "#422323",
+        "untracked_header_bg": "hsl(0, 31%, 20%)",
         "untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 7%))",
         
-        "expand_all_diff_bg": "#30373c",
+        "expand_all_diff_bg": "hsl(205, 11%, 21%)",
         "expand_all_diff_bg-hover": "color(var(expand_all_diff_bg) l(+ 5%))",
 
         "staged_icon_fg": "var(text)",
-        "staged_header_bg": "#31382d",
+        "staged_header_bg": "hsl(98, 11%, 20%)",
         "staged_header_bg-hover": "color(var(staged_header_bg) l(+ 5%))",
 
         "renamed_file_inserted": "color(var(green) s(30%) l(60%))",
@@ -310,9 +310,9 @@
         "switch_repo_bg": "var(dark_gray-light)",
 
         // Tool tips
-        "tool_tip_bg": "#404040",
-        "tool_tip_fg": "#dddddd",
-        "tool_tip_border": "#777777",
+        "tool_tip_bg": "hsl(0, 0%, 25%)",
+        "tool_tip_fg": "hsl(0, 0%, 87%)",
+        "tool_tip_border": "hsl(0, 0%, 47%)",
 
         // Hints
         "hint_bg": "color(var(yellow) l(75%))",
@@ -354,8 +354,8 @@
         "recent_repositories_row_bg-hover": "var(dark_gray-light)",
 
         // Preferences Page
-        "preferences_overlay_bg": "#333",
-        "preferences_section_table_bg": "#333",
+        "preferences_overlay_bg": "hsl(0, 0%, 20%)",
+        "preferences_section_table_bg": "hsl(0, 0%, 20%)",
     },
     "rules":
     [
@@ -585,20 +585,20 @@
         {
             "class": "tab",
             "parents": [{"class": "side_bar_container"}],
-            "layer0.tint": "#404040",
+            "layer0.tint": "hsl(0, 0%, 25%)",
             "layer0.opacity": 1.0,
         },
         {
             "class": "tab",
             "parents": [{"class": "side_bar_container"}],
             "attributes": ["selected"],
-            "layer0.tint": "#777",
+            "layer0.tint": "hsl(0, 0%, 47%)",
         },
         {
             "class": "tab",
             "parents": [{"class": "side_bar_container"}],
             "attributes": ["hover", "!selected"],
-            "layer0.tint": "#606060",
+            "layer0.tint": "hsl(0, 0%, 38%)",
         },
 
         // File tabs
@@ -1686,7 +1686,7 @@
 
         {
             "class": "side_bar_tabs",
-            "layer0.tint": "#555",
+            "layer0.tint": "hsl(0, 0%, 33%)",
             "layer0.opacity": 1.0,
         },
 
@@ -2850,7 +2850,7 @@
         {
             "class": "label_control",
             "parents": [{"class": "hunk_label_container"}],
-            "fg": "#0000"
+            "fg": "transparent"
         },
 
         // Image Diffs
