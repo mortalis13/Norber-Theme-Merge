@@ -102,9 +102,12 @@
         // Buttons
         "split_button_line": "var(background)",
         
-        "button_bg": "hsl(214, 10%, 40%)",
+        "button_bg": "hsl(214, 10%, 34%)",
         "button_fg": "var(label_color)",
         "button_shadow": "transparent",
+        
+        "button_all_bg": "var(button_bg)",
+        "button_all_hover_bg": "color(var(button_all_bg) l(- 12%))",
 
         "highlighted_button_light_bg": "color(hsl(84, 35%, 50%))",
         "highlighted_button_light_fg": "var(label_color)",
@@ -238,14 +241,15 @@
 
         "recent_icon_fg": "var(yellow)",
         "recent_icon_bg": "transparent",
-        "untracked_header_bg": "hsl(0, 31%, 20%)",
+        
+        "untracked_header_bg": "hsl(0, 40%, 26%)",
         "untracked_header_bg-hover": "color(var(untracked_header_bg) l(+ 7%))",
         
-        "expand_all_diff_bg": "hsl(205, 11%, 21%)",
+        "expand_all_diff_bg": "hsl(205, 11%, 26%)",
         "expand_all_diff_bg-hover": "color(var(expand_all_diff_bg) l(+ 5%))",
 
         "staged_icon_fg": "var(foreground)",
-        "staged_header_bg": "hsl(98, 11%, 20%)",
+        "staged_header_bg": "hsl(100, 40%, 24%)",
         "staged_header_bg-hover": "color(var(staged_header_bg) l(+ 5%))",
 
         "renamed_file_inserted": "color(var(green) s(30%) l(60%))",
@@ -2569,30 +2573,13 @@
             "layer0.tint": "var(button_bg)",
             "layer0.inner_margin": 4,
             "layer0.opacity": 1,
-            "layer1.opacity": 0.4,
-        },
-        {
-            "class": "button_control all_button",
-            "attributes": ["hover"],
             "layer1.opacity": 1,
+            "layer1.tint": "var(button_all_bg)",
         },
         {
             "class": "button_control all_button",
             "attributes": ["hover"],
-            "parents": [{"class": "expand_all_diff_control working"}],
-            "layer1.tint": "var(expand_all_diff_bg)",
-        },
-        {
-            "class": "button_control all_button",
-            "attributes": ["hover"],
-            "parents": [{"class": "expand_all_diff_control staged"}],
-            "layer1.tint": "var(staged_header_bg)",
-        },
-        {
-            "class": "button_control all_button",
-            "attributes": ["hover"],
-            "parents": [{"class": "expand_all_diff_control untracked"}],
-            "layer1.tint": "var(untracked_header_bg)",
+            "layer1.tint": "var(button_all_hover_bg)",
         },
         
         {
