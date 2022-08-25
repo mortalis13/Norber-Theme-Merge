@@ -220,7 +220,6 @@
         "terminator_fg": "var(medium_gray)",
         
         // Diff headers
-        "file_diff_shadow": "color(black a(0.5))",
         "file_icon_bg": "color(white a(0.2))",
 
         "hunk_button_fg": "hsl(0, 0%, 93%)",
@@ -229,7 +228,8 @@
         "file_header_bg": "var(diff_scheme_background)",
         "file_header_bg-hover": "hsl(205, 12%, 19%)",
 
-        "hunk_header_bg": "hsl(0, 0%, 27%)",
+        "hunk_header_bg": "hsl(0, 0%, 13%)",
+        "hunk_header_fg": "hsl(0, 0%, 94%)",
 
         "deleted_icon_fg": "var(foreground)",
         "deleted_header_bg": "var(dark_red)",
@@ -2493,14 +2493,13 @@
         {
             "class": "file_diff_header",
             "parents": [{"class": "expand_all_diff_control"}],
-            "spacing": 4,
-            "content_margin": 4,
+            "content_margin": 4
         },
         {
             "class": "file_diff_header",
             "parents": [{"class": "expand_all_diff_control detail"}],
             "layer0.tint": "var(expand_all_diff_bg)",
-            "content_margin": [4, 12, 4, 12],
+            "content_margin": [4, 12],
         },
         {
             "class": "file_diff_header",
@@ -2512,7 +2511,6 @@
             "class": "file_diff_header",
             "parents": [{"class": "expand_all_diff_control working"}],
             "layer0.tint": "var(expand_all_diff_bg)",
-            "content_margin": [4, 4, 4, 4],
         },
         {
             "class": "file_diff_header",
@@ -2557,7 +2555,6 @@
             "class": "file_diff_header",
             "parents": [{"class": "file_diff_control untracked"}],
             "layer0.tint": "var(untracked_header_bg)",
-            "content_margin": [20, 4, 4, 4]
         },
         {
             "class": "file_diff_header collapsible",
@@ -2798,18 +2795,13 @@
         },
         {
             "class": "hunk_description_container",
-            "content_margin": [0, 8, 0, 8],
-        },
-        
-        // vanish hunk header
-        {
-            "class": "file_diff_hunk_header",
-            "layer0.tint": "var(diff_scheme_background)",
+            "content_margin": [0, 8],
         },
         {
             "class": "label_control",
             "parents": [{"class": "hunk_label_container"}],
-            "fg": "transparent"
+            "fg": "var(hunk_header_fg)",
+            "font.italic": true,
         },
 
         // Image Diffs
@@ -2884,7 +2876,7 @@
         // Hunk buttons
         {
             "class": "hunk_button",
-            "min_size": [100, 24],
+            "min_size": [120, 24],
             "content_margin": [14, 4],
         },
         {
