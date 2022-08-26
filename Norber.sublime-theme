@@ -148,7 +148,7 @@
         "location_bar_selected_fg": "hsl(200, 65%, 80%)",
         "location_bar_heading_fg": "hsl(50, 100%, 50%)",
         "location_bar_heading_shadow": "transparent",
-        "location_bar_row_bg-hover": "hsl(0, 0%, 36%)",
+        "location_bar_row_bg-hover": "hsl(210, 7%, 35%)",
         "disclosure_fg": "white",
 
         // Commit list
@@ -174,7 +174,8 @@
         "table_of_contents_bg": "var(dark_gray-medium)",
         "table_of_contents_fg": "var(foreground)",
         "table_of_contents_heading_fg": "var(text_heading_fg)",
-        "table_of_contents_row_bg": "var(medium_gray)",
+        "table_of_contents_row_bg-hover": "hsl(210, 7%, 35%)",
+        "table_of_contents_row_bg-selected": "hsl(210, 7%, 32%)",
 
         // Annotations
         "commit_annotation_fg": "hsl(204, 100%, 83%)",
@@ -491,7 +492,7 @@
             "layer0.inner_margin": 4,
             "min_size": [70, 30],
             "content_margin": [8, 0, 8, 0],
-            "layer1.opacity": { "target": 0.0, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer1.opacity": 0.0,
             "layer1.tint": "var(toggle_button_bg)",
         },
         {
@@ -511,12 +512,12 @@
         {
             "class": "toggle_button",
             "attributes": ["hover"],
-            "layer1.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer1.opacity": 0.3,
         },
         {
             "class": "toggle_button",
             "attributes": ["selected"],
-            "layer1.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer1.opacity": 0.3,
             "layer1.opacity": 0,
         },
         {
@@ -994,10 +995,10 @@
             "class": "git_output_button",
             "layer0.texture": "NorberTheme/icons/icon_output_border.png",
             "layer0.tint": "var(output_fg)",
-            "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer0.opacity": 0.4,
             "layer1.texture": "NorberTheme/icons/icon_output_prompt.png",
             "layer1.tint": "var(output_fg)",
-            "layer1.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer1.opacity": 0.6,
             "layer2.texture": "NorberTheme/icons/icon_output_none.png",
             "layer2.tint": "var(output_fg)",
             "layer2.opacity": 1,
@@ -1026,9 +1027,9 @@
         {
             "class": "git_output_button",
             "attributes": ["hover"],
-            "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
-            "layer1.opacity": { "target": 0.8, "speed": 4.0, "interpolation": "smoothstep" },
-            "layer2.opacity": { "target": 1.0, "speed": 4.0, "interpolation": "smoothstep" },
+            "layer0.opacity": 0.6,
+            "layer1.opacity": 0.8,
+            "layer2.opacity": 1.0,
         },
         {
             "class": "toggle_diverged_banner_button",
@@ -1675,7 +1676,7 @@
         },
         {
             "class": "table_of_contents_tree",
-            "row_padding": [6, 2, 2, 2],
+            "row_padding": [6, 8],
             "indent": 12,
             "indent_offset": 13,
             "indent_top_level": true,
@@ -1684,7 +1685,7 @@
         {
             "class": "table_of_contents_tree",
             "settings": ["overlay_scroll_bars"],
-            "row_padding": [6, 2, 8, 2],
+            "row_padding": [6, 8],
         },
         {
             "class": "table_of_contents_label",
@@ -1694,35 +1695,28 @@
         },
         {
             "class": "table_of_contents_row_container",
-            "layer0.tint": "var(table_of_contents_row_bg)",
+            "layer0.tint": "var(table_of_contents_row_bg-hover)",
             "layer0.opacity": 0.0,
         },
         {
             "class": "table_of_contents_row_container",
             "attributes": ["hover"],
-            "layer0.opacity": 0.2,
+            "layer0.opacity": 1.0,
         },
         {
             "class": "table_of_contents_row_container",
             "attributes": ["selected"],
-            "layer0.opacity": 0.4,
+            "layer0.tint": "var(table_of_contents_row_bg-selected)",
+            "layer0.opacity": 1.0,
         },
-
         {
             "class": "table_of_contents_heading",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
             "font.bold": true,
             "color": "var(table_of_contents_heading_fg)",
-            "shadow_color": "var(location_bar_heading_shadow)",
-            "shadow_offset": [0, 1]
         },
         
-        {
-            "class": "branch_table",
-            "dark_content": true
-        },
-
         // Commit list
         {
             "class": "scroll_bar_control",
@@ -1852,9 +1846,9 @@
         },
         {
             "class": "commit_annotation bordered",
-            "content_margin": [10.0, 0.0, 4.0, 0.0],
-            "border_width": [4.0, 0.0, 0.0, 0.0],
-            "border_radius": [3.0, 3.0, 3.0, 3.0],
+            "content_margin": [10, 0, 4, 0],
+            "border_width": [4, 0, 0, 0],
+            "border_radius": [3, 3, 3, 3],
         },
         {
             "class": "commit_annotation branch head",
@@ -3509,11 +3503,11 @@
         },
         {
             "class": "table_of_contents_style_container",
-            "content_margin": [0, 8, 0, 8],
+            "content_margin": [0, 8],
         },
         {
             "class": "table_of_contents_style_selector",
-            "min_size": [80, 20],
+            "min_size": [100, 34],
         },
 
         // Repository Tabs
