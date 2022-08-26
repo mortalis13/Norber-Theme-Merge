@@ -2,7 +2,7 @@
     "variables": {
         // Color palette
         "diff_scheme_background": "hsl(255, 7%, 11%)",
-        "background": "hsl(0, 0%, 13%)",
+        "background": "hsl(0, 0%, 16%)",
         "foreground": "hsl(0, 0%, 100%)",
         "text_heading_fg": "hsl(0, 0%, 100%)",
     
@@ -145,9 +145,10 @@
         "submodule_stat_bg": "var(orange)",
         "submodule_stat_fg": "white",
         "location_bar_fg": "var(foreground)",
-        "location_bar_heading_fg": "var(text_heading_fg)",
-        "location_bar_heading_shadow": "black",
-        "location_bar_row_bg-hover": "var(background)",
+        "location_bar_selected_fg": "hsl(200, 65%, 80%)",
+        "location_bar_heading_fg": "hsl(50, 100%, 50%)",
+        "location_bar_heading_shadow": "transparent",
+        "location_bar_row_bg-hover": "hsl(0, 0%, 36%)",
         "disclosure_fg": "white",
 
         // Commit list
@@ -214,7 +215,7 @@
         "submodule_light_ann_fg": "color(var(foreground) a(0.5))",
         
         // Detail panel
-        "detail_panel_bg": "hsl(0, 0%, 18%)",
+        "detail_panel_bg": "hsl(0, 0%, 16%)",
         "field_name_fg": "var(foreground)",
         "author_fg": "hsl(0, 0%, 73%)",
         "terminator_fg": "var(medium_gray)",
@@ -821,7 +822,7 @@
             "layer0.tint": "var(background)",
             "layer0.opacity": 1.0,
             "layer0.inner_margin": 4,
-            "content_margin": 4
+            "content_margin": 4,
         },
         {
             "class": "mini_quick_panel_row",
@@ -1484,6 +1485,13 @@
             "layer0.texture": "NorberTheme/assets/dark_scroll_puck.png",
         },
         {
+            "class": "side_bar_tabs",
+            "layer0.tint": "hsl(0, 0%, 33%)",
+            "layer0.opacity": 1.0,
+        },
+        
+        // Location bar
+        {
             "class": "location_bar_tab_label",
             "faded": true,
         },
@@ -1498,10 +1506,8 @@
         {
             "class": "location_bar_label",
             "attributes": ["selected"],
-            "font.face": "var(font_face)",
-            "font.size": "var(font_size)",
             "font.bold": true,
-            "color": "var(location_bar_fg)",
+            "color": "var(location_bar_selected_fg)",
         },
         {
             "class": "location_bar_heading",
@@ -1509,13 +1515,11 @@
             "font.size": "var(font_size)",
             "font.bold": true,
             "color": "var(location_bar_heading_fg)",
-            "shadow_color": "var(location_bar_heading_shadow)",
-            "shadow_offset": [0, 1],
             "faded": true,
         },
         {
             "class": "location_bar_tree",
-            "row_padding": [6, 2, 2, 2],
+            "row_padding": [6, 8],
             "indent": 12,
             "indent_offset": 13,
             "indent_top_level": true,
@@ -1529,17 +1533,17 @@
         {
             "class": "location_bar_row",
             "layer0.tint": "var(location_bar_row_bg-hover)",
-            "layer0.opacity": 0.0
+            "layer0.opacity": 0.0,
         },
         {
             "class": "location_bar_row",
             "attributes": ["selected"],
-            "layer0.opacity": 1.0
+            "layer0.opacity": 1.0,
         },
         {
             "class": "location_bar_row",
             "attributes": ["hover"],
-            "layer0.opacity": 1.0
+            "layer0.opacity": 1.0,
         },
         {
             "class": "filter_input_container",
@@ -1549,14 +1553,14 @@
             "class": "branch_stat",
             "layer0.texture": "NorberTheme/assets/annotation.png",
             "layer0.tint": "var(branch_stats_label_bg)",
-            "layer0.opacity": { "target": 0.2, "speed": 4.0, "interpolation": "smoothstep"},
+            "layer0.opacity": 0.2,
             "layer0.inner_margin": 4,
             "content_margin": [4, 0, 3, 0]
         },
         {
             "class": "branch_stat",
             "attributes": ["hover"],
-            "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep"},
+            "layer0.opacity": 0.7
         },
         {
             "class": "branch_stat left",
@@ -1587,20 +1591,20 @@
             "class": "branch_stat_label",
             "font.face": "var(font_face)",
             "font.size": "var(font_size)",
-            "color": "color(var(file_ann_fg) a(0.8))",
+            "color": "var(file_ann_fg)",
         },
         {
             "class": "icon_behind",
             "layer0.texture": "NorberTheme/icons/icon_behind.png",
             "layer0.tint": "var(file_ann_fg)",
-            "layer0.opacity": 0.4,
+            "layer0.opacity": 0.7,
             "content_margin": [4, 5, 5, 5],
         },
         {
             "class": "icon_ahead",
             "layer0.texture": "NorberTheme/icons/icon_ahead.png",
             "layer0.tint": "var(file_ann_fg)",
-            "layer0.opacity": 0.4,
+            "layer0.opacity": 0.7,
             "content_margin": [4, 5, 5, 5],
         },
         {
@@ -1615,32 +1619,29 @@
         },
         {
             "class": "icon_visible",
-            "parents": [{
-                "class": "side_bar_container",
-                "attributes": ["hover"],
-            }],
-            "layer0.opacity": "var(icon_button_opacity)",
+            "parents": [{"class": "side_bar_container"}],
+            "layer0.opacity": 0.8,
         },
         {
             "class": "icon_visible",
             "attributes": ["hover"],
-            "layer0.opacity": "var(icon_button_opacity-hover)",
+            "layer0.opacity": 1.0,
         },
         {
             "class": "icon_hidden",
             "layer0.texture": "NorberTheme/icons/icon_hidden.png",
-            "layer0.opacity": "var(icon_button_opacity-faded)",
+            "layer0.opacity": 0.4,
             "layer0.tint": "var(icon_button_fg)",
             "layer1.texture": "NorberTheme/icons/icon_hidden_slash.png",
-            "layer1.opacity": "var(icon_button_opacity)",
+            "layer1.opacity": 0.8,
             "layer1.tint": "var(hidden_slash)",
             "content_margin": [8, 5],
         },
         {
             "class": "icon_hidden",
             "attributes": ["hover"],
-            "layer0.opacity": "var(icon_button_opacity-hover)",
-            "layer1.opacity": "var(icon_button_opacity-hover)",
+            "layer0.opacity": 1.0,
+            "layer1.opacity": 1.0,
         },
         {
             "class": "icon_uninitialized_submodule",
@@ -1652,32 +1653,22 @@
         {
             "class": "icon_section_actions",
             "layer0.texture": "NorberTheme/assets/gear.png",
-            "layer0.opacity": "var(icon_button_opacity-hidden)",
+            "layer0.opacity": 0.8,
             "layer0.tint": "var(icon_button_fg)",
             "content_margin": [10, 7],
         },
         {
             "class": "icon_section_actions",
-            "parents": [
-                {
-                    "class": "side_bar_container",
-                    "attributes": ["hover"],
-                },
-            ],
-            "layer0.opacity": "var(icon_button_opacity)",
+            "parents": [{"class": "side_bar_container", "attributes": ["hover"]}],
+            "layer0.opacity": 0.8,
         },
         {
             "class": "icon_section_actions",
             "attributes": ["hover"],
-            "layer0.opacity": "var(icon_button_opacity-hover)",
-        },
-
-        {
-            "class": "side_bar_tabs",
-            "layer0.tint": "hsl(0, 0%, 33%)",
             "layer0.opacity": 1.0,
         },
 
+        // Table of contents
         {
             "class": "table_of_contents_heading_container",
             "spacing": 8,
