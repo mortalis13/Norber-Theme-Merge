@@ -2549,6 +2549,13 @@
         },
         
         {
+            "class": "button_control icon_button",
+            "parents": [{"class": "file_diff_header"}],
+            "content_margin": 0,
+            "min_size": [40, 36],
+        },
+        
+        {
             "class": "button_control all_button",
             "layer0.texture": "NorberTheme/assets/button_outline.png",
             "layer0.draw_center": false,
