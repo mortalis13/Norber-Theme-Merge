@@ -949,7 +949,7 @@
             "layer0.inner_margin": 4,
             "content_margin": [36, 0],
             "icon_spacing": [2, 1],
-            "min_size": [220, 27]
+            "min_size": [400, 36]
         },
         {
             "class": "info_area",
@@ -1087,7 +1087,7 @@
         {
             "class": "button_control icon_button",
             "content_margin": 0,
-            "min_size": [10, 27],
+            "min_size": [44, 36],
         },
         {
             "class": "button_control icon_button search_close",
@@ -1133,12 +1133,12 @@
         {
             "class": "button_control_right icon_button",
             "content_margin": 0,
-            "min_size": [20, 27],
+            "min_size": [26, 27],
         },
         {
             "class": "button_control_left icon_button",
             "content_margin": 0,
-            "min_size": [20, 27],
+            "min_size": [44, 36],
         },
         {
             "class": "button_control icon_button file_button",
