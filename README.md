@@ -1,4 +1,4 @@
-# Norber Theme v1.1
+# Norber Theme v1.2
 
 Theme for [Sublime Merge](https://www.sublimemerge.com).
 
