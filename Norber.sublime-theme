@@ -949,7 +949,7 @@
             "layer0.inner_margin": 4,
             "content_margin": [36, 0],
             "icon_spacing": [2, 1],
-            "min_size": [400, 36]
+            "min_size": [400, 32]
         },
         {
             "class": "info_area",
@@ -1087,7 +1087,7 @@
         {
             "class": "button_control icon_button",
             "content_margin": 0,
-            "min_size": [44, 36],
+            "min_size": [38, 32],
         },
         {
             "class": "button_control icon_button search_close",
@@ -1133,12 +1133,12 @@
         {
             "class": "button_control_right icon_button",
             "content_margin": 0,
-            "min_size": [26, 27],
+            "min_size": [20, 32],
         },
         {
             "class": "button_control_left icon_button",
             "content_margin": 0,
-            "min_size": [44, 36],
+            "min_size": [38, 32],
         },
         {
             "class": "button_control icon_button file_button",
@@ -2552,7 +2552,7 @@
             "class": "button_control icon_button",
             "parents": [{"class": "file_diff_header"}],
             "content_margin": 0,
-            "min_size": [40, 36],
+            "min_size": [38, 32],
         },
         
         {
