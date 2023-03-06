@@ -370,13 +370,13 @@
         
         {
             "scope": "diff.deleted.char",
-            "background": "hsla(340, 30%, 38%, 0.3)",
-            "foreground_adjust": "l(+ 10%)"
+            "background": "hsla(340, 40%, 50%, 0.35)",
+            "foreground_adjust": "l(+ 20%)"
         },
         {
             "scope": "diff.inserted.char",
-            "background": "hsla(160, 50%, 45%, 0.3)",
-            "foreground_adjust": "l(+ 10%)"
+            "background": "hsla(160, 50%, 45%, 0.35)",
+            "foreground_adjust": "l(+ 20%)"
         },
         
         // Custom log syntax
