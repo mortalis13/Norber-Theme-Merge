@@ -370,7 +370,7 @@
         
         {
             "scope": "diff.deleted.char",
-            "background": "hsla(340, 40%, 50%, 0.35)",
+            "background": "hsla(340, 60%, 60%, 0.35)",
             "foreground_adjust": "l(+ 20%)"
         },
         {
